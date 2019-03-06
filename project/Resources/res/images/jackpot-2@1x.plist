@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>text_light.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{480,236}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{480,236}}</string>
+                <key>sourceSize</key>
+                <string>{480,236}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
+            <key>realTextureFileName</key>
+            <string>jackpot-2@1x.png</string>
+            <key>size</key>
+            <string>{484,484}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:15a1fd33b7ae8c4fa6ff3e9dc6325467:819a727762e5173e86355a38cd1eb400:f79085c70d4c3f2d816b5f430cf1f54a$</string>
+            <key>textureFileName</key>
+            <string>jackpot-2@1x.png</string>
+        </dict>
+    </dict>
+</plist>

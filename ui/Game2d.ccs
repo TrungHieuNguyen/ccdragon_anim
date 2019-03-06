@@ -1,0 +1,1170 @@
+<Solution>
+  <PropertyGroup Name="Game2d" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="fonts">
+          <Folder Name="dhcl">
+            <Fnt Name="coin_game-export.fnt" />
+            <Fnt Name="coin_win-export.fnt" />
+            <Fnt Name="coin-export.fnt" />
+            <Fnt Name="dong-export.fnt" />
+            <Fnt Name="font_black-export.fnt" />
+          </Folder>
+          <Folder Name="lobby">
+            <Fnt Name="font_coin_tophu-export.fnt" />
+            <Fnt Name="hu_100_slot-export.fnt" />
+            <Fnt Name="hu_1000_slot-export.fnt" />
+            <Fnt Name="hu_1000-export.fnt" />
+            <Fnt Name="hu_100-export.fnt" />
+            <Fnt Name="hu_10k_slot-export.fnt" />
+            <Fnt Name="hu_10k-export.fnt" />
+          </Folder>
+          <TTF Name="AUSTRALIA-TITLE.ttf" />
+          <Fnt Name="main_title_font.fnt" />
+          <Fnt Name="number_lose.fnt" />
+          <Fnt Name="number_win.fnt" />
+          <TTF Name="Roboto-Bold.ttf" />
+          <TTF Name="Roboto-Medium.ttf" />
+          <TTF Name="Roboto-Regular.ttf" />
+          <TTF Name="sf-ui-text-bold.ttf" />
+        </Folder>
+        <Folder Name="images">
+          <PlistImageFolder Image="chat_emo-@1x.png" PListFile="chat_emo-@1x.plist" Name=".chat_emo-@1x_PList.Dir">
+            <PlistImageFile Name="adore.png" Key="adore.png" />
+            <PlistImageFile Name="after_boom.png" Key="after_boom.png" />
+            <PlistImageFile Name="ah.png" Key="ah.png" />
+            <PlistImageFile Name="amazed.png" Key="amazed.png" />
+            <PlistImageFile Name="angry.png" Key="angry.png" />
+            <PlistImageFile Name="bad_smelly.png" Key="bad_smelly.png" />
+            <PlistImageFile Name="baffle.png" Key="baffle.png" />
+            <PlistImageFile Name="beat_brick.png" Key="beat_brick.png" />
+            <PlistImageFile Name="beat_plaster.png" Key="beat_plaster.png" />
+            <PlistImageFile Name="beat_shot.png" Key="beat_shot.png" />
+            <PlistImageFile Name="beated.png" Key="beated.png" />
+            <PlistImageFile Name="beauty.png" Key="beauty.png" />
+            <PlistImageFile Name="big_smile.png" Key="big_smile.png" />
+            <PlistImageFile Name="boss.png" Key="boss.png" />
+            <PlistImageFile Name="burn_joss_stick.png" Key="burn_joss_stick.png" />
+            <PlistImageFile Name="byebye.png" Key="byebye.png" />
+            <PlistImageFile Name="canny.png" Key="canny.png" />
+            <PlistImageFile Name="choler.png" Key="choler.png" />
+            <PlistImageFile Name="cold.png" Key="cold.png" />
+            <PlistImageFile Name="confident.png" Key="confident.png" />
+            <PlistImageFile Name="confuse.png" Key="confuse.png" />
+            <PlistImageFile Name="cool.png" Key="cool.png" />
+            <PlistImageFile Name="cry.png" Key="cry.png" />
+            <PlistImageFile Name="doubt.png" Key="doubt.png" />
+            <PlistImageFile Name="dribble.png" Key="dribble.png" />
+            <PlistImageFile Name="embarrassed.png" Key="embarrassed.png" />
+            <PlistImageFile Name="extreme_sexy_girl.png" Key="extreme_sexy_girl.png" />
+            <PlistImageFile Name="feel_good.png" Key="feel_good.png" />
+            <PlistImageFile Name="go.png" Key="go.png" />
+            <PlistImageFile Name="haha.png" Key="haha.png" />
+            <PlistImageFile Name="hell_boy.png" Key="hell_boy.png" />
+            <PlistImageFile Name="hungry.png" Key="hungry.png" />
+            <PlistImageFile Name="look_down.png" Key="look_down.png" />
+            <PlistImageFile Name="matrix.png" Key="matrix.png" />
+            <PlistImageFile Name="misdoubt.png" Key="misdoubt.png" />
+            <PlistImageFile Name="nosebleed.png" Key="nosebleed.png" />
+            <PlistImageFile Name="oh.png" Key="oh.png" />
+            <PlistImageFile Name="ops.png" Key="ops.png" />
+            <PlistImageFile Name="pudency.png" Key="pudency.png" />
+            <PlistImageFile Name="rap.png" Key="rap.png" />
+            <PlistImageFile Name="sad.png" Key="sad.png" />
+            <PlistImageFile Name="sexy_girl.png" Key="sexy_girl.png" />
+            <PlistImageFile Name="shame.png" Key="shame.png" />
+            <PlistImageFile Name="smile.png" Key="smile.png" />
+            <PlistImageFile Name="spiderman.png" Key="spiderman.png" />
+            <PlistImageFile Name="still_dreaming.png" Key="still_dreaming.png" />
+            <PlistImageFile Name="sure.png" Key="sure.png" />
+            <PlistImageFile Name="surrender.png" Key="surrender.png" />
+            <PlistImageFile Name="sweat.png" Key="sweat.png" />
+            <PlistImageFile Name="sweet_kiss.png" Key="sweet_kiss.png" />
+            <PlistImageFile Name="tire.png" Key="tire.png" />
+            <PlistImageFile Name="too_sad.png" Key="too_sad.png" />
+            <PlistImageFile Name="waaaht.png" Key="waaaht.png" />
+            <PlistImageFile Name="what.png" Key="what.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="chat_ui-@1x.png" PListFile="chat_ui-@1x.plist" Name=".chat_ui-@1x_PList.Dir">
+            <PlistImageFile Name="chat_boxchat.png" Key="chat_boxchat.png" />
+            <PlistImageFile Name="Chat_icon_emotion.png" Key="Chat_icon_emotion.png" />
+            <PlistImageFile Name="chat_icon_hover.png" Key="chat_icon_hover.png" />
+            <PlistImageFile Name="chat_icon_lichsu.png" Key="chat_icon_lichsu.png" />
+            <PlistImageFile Name="chat_icon_line.png" Key="chat_icon_line.png" />
+            <PlistImageFile Name="chat_icon_line_sang_duoi_hover.png" Key="chat_icon_line_sang_duoi_hover.png" />
+            <PlistImageFile Name="chat_icon_line_sang_tren_hover.png" Key="chat_icon_line_sang_tren_hover.png" />
+            <PlistImageFile Name="chat_icon_send.png" Key="chat_icon_send.png" />
+            <PlistImageFile Name="chat_icon_send_hover.png" Key="chat_icon_send_hover.png" />
+            <PlistImageFile Name="chat_icon_thongdung.png" Key="chat_icon_thongdung.png" />
+            <PlistImageFile Name="chat_lichsu_icon_scroll.png" Key="chat_lichsu_icon_scroll.png" />
+            <PlistImageFile Name="chat_lichsu_line_scroll.png" Key="chat_lichsu_line_scroll.png" />
+            <PlistImageFile Name="chat_popup.png" Key="chat_popup.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="common_images-1-@1x.png" PListFile="common_images-1-@1x.plist" Name=".common_images-1-@1x_PList.Dir">
+            <PlistImageFile Name="bar_bootton_background_gameplay_banchoi.png" Key="bar_bootton_background_gameplay_banchoi.png" />
+            <PlistImageFile Name="bar_top_background_gameplay_banchoi.png" Key="bar_top_background_gameplay_banchoi.png" />
+            <PlistImageFile Name="game_base_lose.png" Key="game_base_lose.png" />
+            <PlistImageFile Name="game_base_win.png" Key="game_base_win.png" />
+            <PlistImageFile Name="gameplay_effect_win2.png" Key="gameplay_effect_win2.png" />
+            <PlistImageFile Name="kimcuong.png" Key="kimcuong.png" />
+            <PlistImageFile Name="Lobby_bar_nho_thongtin.png" Key="Lobby_bar_nho_thongtin.png" />
+            <PlistImageFile Name="lobby_line_sang_background_nen2.png" Key="lobby_line_sang_background_nen2.png" />
+            <PlistImageFile Name="main_baricon_duoi.png" Key="main_baricon_duoi.png" />
+            <PlistImageFile Name="main_baricon_tren_1.png" Key="main_baricon_tren_1.png" />
+            <PlistImageFile Name="main_baricon_tren_nho_2.png" Key="main_baricon_tren_nho_2.png" />
+            <PlistImageFile Name="main_baricon_tren_trongsuot_3.png" Key="main_baricon_tren_trongsuot_3.png" />
+            <PlistImageFile Name="Quatang_sang.png" Key="Quatang_sang.png" />
+            <PlistImageFile Name="tala_effec_thua.png" Key="tala_effec_thua.png" />
+            <PlistImageFile Name="vip_icon_3.png" Key="vip_icon_3.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="common_images-2-@1x.png" PListFile="common_images-2-@1x.plist" Name=".common_images-2-@1x_PList.Dir">
+            <PlistImageFile Name="gameplay_effect_win.png" Key="gameplay_effect_win.png" />
+            <PlistImageFile Name="tala_star.png" Key="tala_star.png" />
+            <PlistImageFile Name="vip_icon_1.png" Key="vip_icon_1.png" />
+            <PlistImageFile Name="vip_icon_2.png" Key="vip_icon_2.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="common_ui-1@1x.png" PListFile="common_ui-1@1x.plist" Name=".common_ui-1@1x_PList.Dir">
+            <PlistImageFile Name="avatar.png" Key="avatar.png" />
+            <PlistImageFile Name="banbe_icon_dangchoi.png" Key="banbe_icon_dangchoi.png" />
+            <PlistImageFile Name="banbe_icon_offline.png" Key="banbe_icon_offline.png" />
+            <PlistImageFile Name="banbe_icon_online.png" Key="banbe_icon_online.png" />
+            <PlistImageFile Name="bg_row.png" Key="bg_row.png" />
+            <PlistImageFile Name="btn_daily-2.png" Key="btn_daily-2.png" />
+            <PlistImageFile Name="button_popup_dongy_normal.png" Key="button_popup_dongy_normal.png" />
+            <PlistImageFile Name="chon_button.png" Key="chon_button.png" />
+            <PlistImageFile Name="Chuyen.png" Key="Chuyen.png" />
+            <PlistImageFile Name="Friend_icon_coins_top.png" Key="Friend_icon_coins_top.png" />
+            <PlistImageFile Name="game_effect_base.png" Key="game_effect_base.png" />
+            <PlistImageFile Name="game_effect_base_2.png" Key="game_effect_base_2.png" />
+            <PlistImageFile Name="game_load_time_2.png" Key="game_load_time_2.png" />
+            <PlistImageFile Name="gameplay_backgroundline_chu_avata.png" Key="gameplay_backgroundline_chu_avata.png" />
+            <PlistImageFile Name="gameplay_chat_balloon.png" Key="gameplay_chat_balloon.png" />
+            <PlistImageFile Name="gameplay_countdown_diemxanh.png" Key="gameplay_countdown_diemxanh.png" />
+            <PlistImageFile Name="gameplay_countdown_nenxanh.png" Key="gameplay_countdown_nenxanh.png" />
+            <PlistImageFile Name="gameplay_dem_gio.png" Key="gameplay_dem_gio.png" />
+            <PlistImageFile Name="gameplay_icon_ad_ban.png" Key="gameplay_icon_ad_ban.png" />
+            <PlistImageFile Name="gameplay_icon_vao_choi.png" Key="gameplay_icon_vao_choi.png" />
+            <PlistImageFile Name="gameplay_popup_line_sang_bar_1px_duan5_again.png" Key="gameplay_popup_line_sang_bar_1px_duan5_again.png" />
+            <PlistImageFile Name="gameplay_popup_linebar_1px_duan5_again.png" Key="gameplay_popup_linebar_1px_duan5_again.png" />
+            <PlistImageFile Name="gameplay_popup_linebar_3px_duan5_again.png" Key="gameplay_popup_linebar_3px_duan5_again.png" />
+            <PlistImageFile Name="gameplay_popup_linesangngang_duan5_again.png" Key="gameplay_popup_linesangngang_duan5_again.png" />
+            <PlistImageFile Name="hangcuatoi_popup.png" Key="hangcuatoi_popup.png" />
+            <PlistImageFile Name="Hu_thuong(1).png" Key="Hu_thuong(1).png" />
+            <PlistImageFile Name="i_icon(1).png" Key="i_icon(1).png" />
+            <PlistImageFile Name="lobby_icon_key_room.png" Key="lobby_icon_key_room.png" />
+            <PlistImageFile Name="Lobby_line_doc_bar.png" Key="Lobby_line_doc_bar.png" />
+            <PlistImageFile Name="Lobby_line_doc_nho_bar.png" Key="Lobby_line_doc_nho_bar.png" />
+            <PlistImageFile Name="Lobby_line_doc_scroll.png" Key="Lobby_line_doc_scroll.png" />
+            <PlistImageFile Name="Lobby_line_ngang_scroll-.png" Key="Lobby_line_ngang_scroll-.png" />
+            <PlistImageFile Name="lobby_tap_chuyen_coin.png" Key="lobby_tap_chuyen_coin.png" />
+            <PlistImageFile Name="Ma_OTP.png" Key="Ma_OTP.png" />
+            <PlistImageFile Name="mail_bar 2.png" Key="mail_bar 2.png" />
+            <PlistImageFile Name="Mail_bar_hopthu.png" Key="Mail_bar_hopthu.png" />
+            <PlistImageFile Name="Mail_bar_noi_dung_thu.png" Key="Mail_bar_noi_dung_thu.png" />
+            <PlistImageFile Name="Mail_bar_sang_hopthu2.png" Key="Mail_bar_sang_hopthu2.png" />
+            <PlistImageFile Name="mail_bar_traloi.png" Key="mail_bar_traloi.png" />
+            <PlistImageFile Name="mail_canhan_box_goithu.png" Key="mail_canhan_box_goithu.png" />
+            <PlistImageFile Name="Mail_line_bar_hopthu.png" Key="Mail_line_bar_hopthu.png" />
+            <PlistImageFile Name="Mail_line_sang_bar_hopthu.png" Key="Mail_line_sang_bar_hopthu.png" />
+            <PlistImageFile Name="Mail_popup_line.png" Key="Mail_popup_line.png" />
+            <PlistImageFile Name="Main_bar_lever_exp.png" Key="Main_bar_lever_exp.png" />
+            <PlistImageFile Name="main_bottom_exp_bar.png" Key="main_bottom_exp_bar.png" />
+            <PlistImageFile Name="Main_icon_bentrong.png" Key="Main_icon_bentrong.png" />
+            <PlistImageFile Name="Main_vien_loatgame_game.png" Key="Main_vien_loatgame_game.png" />
+            <PlistImageFile Name="nhiemvu_line_doc.png" Key="nhiemvu_line_doc.png" />
+            <PlistImageFile Name="nhiemvu_line_ngang_dai.png" Key="nhiemvu_line_ngang_dai.png" />
+            <PlistImageFile Name="nhiemvu_line_ngang_dong_text.png" Key="nhiemvu_line_ngang_dong_text.png" />
+            <PlistImageFile Name="nhiemvu_line_ngang_ngan.png" Key="nhiemvu_line_ngang_ngan.png" />
+            <PlistImageFile Name="Noi_dung.png" Key="Noi_dung.png" />
+            <PlistImageFile Name="phone_icon.png" Key="phone_icon.png" />
+            <PlistImageFile Name="Qua_tang_hang_ngay.png" Key="Qua_tang_hang_ngay.png" />
+            <PlistImageFile Name="Quatang_icon_nhanqua_muavip.png" Key="Quatang_icon_nhanqua_muavip.png" />
+            <PlistImageFile Name="Quatang_line_doc_menu.png" Key="Quatang_line_doc_menu.png" />
+            <PlistImageFile Name="Quatang_nhapgifcode.png" Key="Quatang_nhapgifcode.png" />
+            <PlistImageFile Name="rank_cell_value.png" Key="rank_cell_value.png" />
+            <PlistImageFile Name="ranking_icon_slot2.png" Key="ranking_icon_slot2.png" />
+            <PlistImageFile Name="ranking_icon_slot3.png" Key="ranking_icon_slot3.png" />
+            <PlistImageFile Name="rannking_icon_chamchi.png" Key="rannking_icon_chamchi.png" />
+            <PlistImageFile Name="rannking_tap_chinh_center_hoverl.png" Key="rannking_tap_chinh_center_hoverl.png" />
+            <PlistImageFile Name="rannking_tap_chinh_left_hoverl.png" Key="rannking_tap_chinh_left_hoverl.png" />
+            <PlistImageFile Name="rannking_tap_chinh_line_doc_normal.png" Key="rannking_tap_chinh_line_doc_normal.png" />
+            <PlistImageFile Name="rannking_tap_chinh_normal.png" Key="rannking_tap_chinh_normal.png" />
+            <PlistImageFile Name="rannking_tap_left_hover.png" Key="rannking_tap_left_hover.png" />
+            <PlistImageFile Name="rannking_tap_left_line_sang.png" Key="rannking_tap_left_line_sang.png" />
+            <PlistImageFile Name="rannking_tap_left_normal.png" Key="rannking_tap_left_normal.png" />
+            <PlistImageFile Name="setting_bar_icon_cskh_fanpage.png" Key="setting_bar_icon_cskh_fanpage.png" />
+            <PlistImageFile Name="setting_button_fapagev_cskh_hover.png" Key="setting_button_fapagev_cskh_hover.png" />
+            <PlistImageFile Name="setting_icon_tittle.png" Key="setting_icon_tittle.png" />
+            <PlistImageFile Name="shop_icon_mua.png" Key="shop_icon_mua.png" />
+            <PlistImageFile Name="shop_icon_sao.png" Key="shop_icon_sao.png" />
+            <PlistImageFile Name="shop_khungnhap.png" Key="shop_khungnhap.png" />
+            <PlistImageFile Name="shop_line_ngang_tapscroll.png" Key="shop_line_ngang_tapscroll.png" />
+            <PlistImageFile Name="shop_line_sang.png" Key="shop_line_sang.png" />
+            <PlistImageFile Name="shop_ngang_bar_linesang.png" Key="shop_ngang_bar_linesang.png" />
+            <PlistImageFile Name="sukien_line_banner_ngang1_sukien_duan5_again.png" Key="sukien_line_banner_ngang1_sukien_duan5_again.png" />
+            <PlistImageFile Name="sukien_line_banner_ngang2_sukien_duan5_again.png" Key="sukien_line_banner_ngang2_sukien_duan5_again.png" />
+            <PlistImageFile Name="sukien_line_bar_ngang1_sukien_duan5_again.png" Key="sukien_line_bar_ngang1_sukien_duan5_again.png" />
+            <PlistImageFile Name="sukien_line_bar_ngang2_sukien_duan5_again.png" Key="sukien_line_bar_ngang2_sukien_duan5_again.png" />
+            <PlistImageFile Name="Tab_ten_sdt_chuyen.png" Key="Tab_ten_sdt_chuyen.png" />
+            <PlistImageFile Name="taixieu_icon_gem.png" Key="taixieu_icon_gem.png" />
+            <PlistImageFile Name="taophong_khung_cuoc_max.png" Key="taophong_khung_cuoc_max.png" />
+            <PlistImageFile Name="taophong_line_scroll.png" Key="taophong_line_scroll.png" />
+            <PlistImageFile Name="ten_tab.png" Key="ten_tab.png" />
+            <PlistImageFile Name="thongtincanhan_background_left_avatar.png" Key="thongtincanhan_background_left_avatar.png" />
+            <PlistImageFile Name="thongtincanhan_icon_tittle_duan5.png" Key="thongtincanhan_icon_tittle_duan5.png" />
+            <PlistImageFile Name="thongtincanhan_icon_VIP_nomal_duan5.png" Key="thongtincanhan_icon_VIP_nomal_duan5.png" />
+            <PlistImageFile Name="thongtincanhan_line_ngang_popup_duan5.png" Key="thongtincanhan_line_ngang_popup_duan5.png" />
+            <PlistImageFile Name="thongtincanhan_linengang_text1_duan5.png" Key="thongtincanhan_linengang_text1_duan5.png" />
+            <PlistImageFile Name="thongtincanhan_linengang_text2_duan5.png" Key="thongtincanhan_linengang_text2_duan5.png" />
+            <PlistImageFile Name="title_daily.png" Key="title_daily.png" />
+            <PlistImageFile Name="Vip_icon_chitiet.png" Key="Vip_icon_chitiet.png" />
+            <PlistImageFile Name="Vip_icon_timsao.png" Key="Vip_icon_timsao.png" />
+            <PlistImageFile Name="Vip_lever.png" Key="Vip_lever.png" />
+            <PlistImageFile Name="Vip_lever_2.png" Key="Vip_lever_2.png" />
+            <PlistImageFile Name="Vip_line_phan_dong.png" Key="Vip_line_phan_dong.png" />
+            <PlistImageFile Name="Vip_line_phandong_ca_nhan.png" Key="Vip_line_phandong_ca_nhan.png" />
+            <PlistImageFile Name="Vip_linesang_napgem.png" Key="Vip_linesang_napgem.png" />
+            <PlistImageFile Name="Vip_sline_tap_doc.png" Key="Vip_sline_tap_doc.png" />
+            <PlistImageFile Name="Vip_sline_tap_ngang.png" Key="Vip_sline_tap_ngang.png" />
+            <PlistImageFile Name="Vip_tap_Ben_trai.png" Key="Vip_tap_Ben_trai.png" />
+            <PlistImageFile Name="vongxoay_button_hover.png" Key="vongxoay_button_hover.png" />
+            <PlistImageFile Name="vongxoay_button_normal.png" Key="vongxoay_button_normal.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="common_ui-2@1x.png" PListFile="common_ui-2@1x.plist" Name=".common_ui-2@1x_PList.Dir">
+            <PlistImageFile Name="banbe_icon_vaongay_hover.png" Key="banbe_icon_vaongay_hover.png" />
+            <PlistImageFile Name="banbe_icon_vaongay_normal.png" Key="banbe_icon_vaongay_normal.png" />
+            <PlistImageFile Name="btn_close.png" Key="btn_close.png" />
+            <PlistImageFile Name="btn_giaodich.png" Key="btn_giaodich.png" />
+            <PlistImageFile Name="button_popup_dongy_hoverl.png" Key="button_popup_dongy_hoverl.png" />
+            <PlistImageFile Name="ChoiNgay_Button.png" Key="ChoiNgay_Button.png" />
+            <PlistImageFile Name="ChoiNgay_Button_Vien.png" Key="ChoiNgay_Button_Vien.png" />
+            <PlistImageFile Name="Editing-edit-icon.png" Key="Editing-edit-icon.png" />
+            <PlistImageFile Name="effec_bar_lever.png" Key="effec_bar_lever.png" />
+            <PlistImageFile Name="game_avar_loadtime.png" Key="game_avar_loadtime.png" />
+            <PlistImageFile Name="game_base_number_card.png" Key="game_base_number_card.png" />
+            <PlistImageFile Name="game_effect_star.png" Key="game_effect_star.png" />
+            <PlistImageFile Name="game_load_time.png" Key="game_load_time.png" />
+            <PlistImageFile Name="gameplay_background_chu_avata.png" Key="gameplay_background_chu_avata.png" />
+            <PlistImageFile Name="gameplay_btn_exit.png" Key="gameplay_btn_exit.png" />
+            <PlistImageFile Name="gameplay_efec.png" Key="gameplay_efec.png" />
+            <PlistImageFile Name="gameplay_icon_AR.png" Key="gameplay_icon_AR.png" />
+            <PlistImageFile Name="gameplay_icon_arrow.png" Key="gameplay_icon_arrow.png" />
+            <PlistImageFile Name="gameplay_icon_banchoi1.png" Key="gameplay_icon_banchoi1.png" />
+            <PlistImageFile Name="gameplay_icon_banchoi2.png" Key="gameplay_icon_banchoi2.png" />
+            <PlistImageFile Name="gameplay_icon_banchoi3.png" Key="gameplay_icon_banchoi3.png" />
+            <PlistImageFile Name="gameplay_icon_camera.png" Key="gameplay_icon_camera.png" />
+            <PlistImageFile Name="gameplay_icon_chat.png" Key="gameplay_icon_chat.png" />
+            <PlistImageFile Name="gameplay_icon_check_banbe_chonhet.png" Key="gameplay_icon_check_banbe_chonhet.png" />
+            <PlistImageFile Name="gameplay_icon_check_nomal.png" Key="gameplay_icon_check_nomal.png" />
+            <PlistImageFile Name="gameplay_icon_checkX.png" Key="gameplay_icon_checkX.png" />
+            <PlistImageFile Name="gameplay_icon_chupanh.png" Key="gameplay_icon_chupanh.png" />
+            <PlistImageFile Name="gameplay_icon_chuyen.png" Key="gameplay_icon_chuyen.png" />
+            <PlistImageFile Name="gameplay_icon_cuocmax.png" Key="gameplay_icon_cuocmax.png" />
+            <PlistImageFile Name="gameplay_icon_dung.png" Key="gameplay_icon_dung.png" />
+            <PlistImageFile Name="gameplay_icon_moiban_hover.png" Key="gameplay_icon_moiban_hover.png" />
+            <PlistImageFile Name="gameplay_icon_moiban_normal.png" Key="gameplay_icon_moiban_normal.png" />
+            <PlistImageFile Name="gameplay_icon_sai.png" Key="gameplay_icon_sai.png" />
+            <PlistImageFile Name="gameplay_icon_setting.png" Key="gameplay_icon_setting.png" />
+            <PlistImageFile Name="gameplay_icon_thoat.png" Key="gameplay_icon_thoat.png" />
+            <PlistImageFile Name="gameplay_icon_thoatvongngoai.png" Key="gameplay_icon_thoatvongngoai.png" />
+            <PlistImageFile Name="gameplay_iconpopup_moi.png" Key="gameplay_iconpopup_moi.png" />
+            <PlistImageFile Name="gameplay_popup_bar_den_duan5_again.png" Key="gameplay_popup_bar_den_duan5_again.png" />
+            <PlistImageFile Name="gameplay_popup_tap_banbe_lobby_duan5_again.png" Key="gameplay_popup_tap_banbe_lobby_duan5_again.png" />
+            <PlistImageFile Name="gameplay_title_phong.png" Key="gameplay_title_phong.png" />
+            <PlistImageFile Name="Gioi_thieu_ban_be.png" Key="Gioi_thieu_ban_be.png" />
+            <PlistImageFile Name="Help_icon.png" Key="Help_icon.png" />
+            <PlistImageFile Name="ico_facebook.png" Key="ico_facebook.png" />
+            <PlistImageFile Name="ico_fb.png" Key="ico_fb.png" />
+            <PlistImageFile Name="jackpot_doi_thanh_hu.png" Key="jackpot_doi_thanh_hu.png" />
+            <PlistImageFile Name="Lay_OTP.png" Key="Lay_OTP.png" />
+            <PlistImageFile Name="lobby_01.png" Key="lobby_01.png" />
+            <PlistImageFile Name="lobby_02.png" Key="lobby_02.png" />
+            <PlistImageFile Name="lobby_03.png" Key="lobby_03.png" />
+            <PlistImageFile Name="Lobby_background_bar_scroll.png" Key="Lobby_background_bar_scroll.png" />
+            <PlistImageFile Name="Lobby_bar_timkiem.png" Key="Lobby_bar_timkiem.png" />
+            <PlistImageFile Name="Lobby_effec_game_coin.png" Key="Lobby_effec_game_coin.png" />
+            <PlistImageFile Name="Lobby_icon_banchoi_off.png" Key="Lobby_icon_banchoi_off.png" />
+            <PlistImageFile Name="Lobby_icon_bandangchoi.png" Key="Lobby_icon_bandangchoi.png" />
+            <PlistImageFile Name="Lobby_icon_capdo_bac.png" Key="Lobby_icon_capdo_bac.png" />
+            <PlistImageFile Name="Lobby_icon_capdo_da.png" Key="Lobby_icon_capdo_da.png" />
+            <PlistImageFile Name="Lobby_icon_capdo_dong.png" Key="Lobby_icon_capdo_dong.png" />
+            <PlistImageFile Name="Lobby_icon_capdo_go.png" Key="Lobby_icon_capdo_go.png" />
+            <PlistImageFile Name="Lobby_icon_capdo_khoa.png" Key="Lobby_icon_capdo_khoa.png" />
+            <PlistImageFile Name="Lobby_icon_capdo_vang.png" Key="Lobby_icon_capdo_vang.png" />
+            <PlistImageFile Name="Lobby_icon_capdo_vienngoai.png" Key="Lobby_icon_capdo_vienngoai.png" />
+            <PlistImageFile Name="Lobby_icon_chat.png" Key="Lobby_icon_chat.png" />
+            <PlistImageFile Name="Lobby_icon_choingay.png" Key="Lobby_icon_choingay.png" />
+            <PlistImageFile Name="Lobby_icon_dat_cuoc_max.png" Key="Lobby_icon_dat_cuoc_max.png" />
+            <PlistImageFile Name="Lobby_icon_gem.png" Key="Lobby_icon_gem.png" />
+            <PlistImageFile Name="Lobby_icon_gembar.png" Key="Lobby_icon_gembar.png" />
+            <PlistImageFile Name="Lobby_icon_huongdan.png" Key="Lobby_icon_huongdan.png" />
+            <PlistImageFile Name="Lobby_icon_khoaban.png" Key="Lobby_icon_khoaban.png" />
+            <PlistImageFile Name="Lobby_icon_nguoichoi.png" Key="Lobby_icon_nguoichoi.png" />
+            <PlistImageFile Name="Lobby_icon_nguoichoi_co_trong_ban.png" Key="Lobby_icon_nguoichoi_co_trong_ban.png" />
+            <PlistImageFile Name="Lobby_icon_nguoichoi_thieu.png" Key="Lobby_icon_nguoichoi_thieu.png" />
+            <PlistImageFile Name="lobby_icon_refresh_new_duan5_again.png" Key="lobby_icon_refresh_new_duan5_again.png" />
+            <PlistImageFile Name="Lobby_icon_taoban.png" Key="Lobby_icon_taoban.png" />
+            <PlistImageFile Name="Lobby_icon_tap_tang-dan_giamdan.png" Key="Lobby_icon_tap_tang-dan_giamdan.png" />
+            <PlistImageFile Name="Lobby_icon_Tenban.png" Key="Lobby_icon_Tenban.png" />
+            <PlistImageFile Name="Lobby_icon_Thoatmanhinh.png" Key="Lobby_icon_Thoatmanhinh.png" />
+            <PlistImageFile Name="Lobby_icon_tiencuoc.png" Key="Lobby_icon_tiencuoc.png" />
+            <PlistImageFile Name="Lobby_icon_timkiem.png" Key="Lobby_icon_timkiem.png" />
+            <PlistImageFile Name="lobby_search_icon.png" Key="lobby_search_icon.png" />
+            <PlistImageFile Name="lobby_tap_chuyen_gem.png" Key="lobby_tap_chuyen_gem.png" />
+            <PlistImageFile Name="mail_bar.png" Key="mail_bar.png" />
+            <PlistImageFile Name="Mail_icon_xoathu.png" Key="Mail_icon_xoathu.png" />
+            <PlistImageFile Name="Main_bar_lever.png" Key="Main_bar_lever.png" />
+            <PlistImageFile Name="Main_bar_lever_money.png" Key="Main_bar_lever_money.png" />
+            <PlistImageFile Name="Main_bar_money.png" Key="Main_bar_money.png" />
+            <PlistImageFile Name="Main_bar_star.png" Key="Main_bar_star.png" />
+            <PlistImageFile Name="Main_bar_star_hover.png" Key="Main_bar_star_hover.png" />
+            <PlistImageFile Name="main_btn_info.png" Key="main_btn_info.png" />
+            <PlistImageFile Name="main_btn_share.png" Key="main_btn_share.png" />
+            <PlistImageFile Name="Main_effec_duongvien.png" Key="Main_effec_duongvien.png" />
+            <PlistImageFile Name="main_effect_game_btn.png" Key="main_effect_game_btn.png" />
+            <PlistImageFile Name="Main_icon_banbe.png" Key="Main_icon_banbe.png" />
+            <PlistImageFile Name="Main_icon_benngoai.png" Key="Main_icon_benngoai.png" />
+            <PlistImageFile Name="Main_icon_cauhinh.png" Key="Main_icon_cauhinh.png" />
+            <PlistImageFile Name="Main_icon_diemdanh.png" Key="Main_icon_diemdanh.png" />
+            <PlistImageFile Name="Main_icon_game.png" Key="Main_icon_game.png" />
+            <PlistImageFile Name="Main_icon_hopthu.png" Key="Main_icon_hopthu.png" />
+            <PlistImageFile Name="Main_icon_ngoisao.png" Key="Main_icon_ngoisao.png" />
+            <PlistImageFile Name="Main_icon_nhiemvu.png" Key="Main_icon_nhiemvu.png" />
+            <PlistImageFile Name="Main_icon_plus_money.png" Key="Main_icon_plus_money.png" />
+            <PlistImageFile Name="Main_icon_slotmachines.png" Key="Main_icon_slotmachines.png" />
+            <PlistImageFile Name="Main_icon_sukien.png" Key="Main_icon_sukien.png" />
+            <PlistImageFile Name="Main_icon_taixiu.png" Key="Main_icon_taixiu.png" />
+            <PlistImageFile Name="Main_icon_vang.png" Key="Main_icon_vang.png" />
+            <PlistImageFile Name="Main_icon_vip.png" Key="Main_icon_vip.png" />
+            <PlistImageFile Name="Main_icon_vongxoay.png" Key="Main_icon_vongxoay.png" />
+            <PlistImageFile Name="Main_icon_xephang.png" Key="Main_icon_xephang.png" />
+            <PlistImageFile Name="main_item_bong.png" Key="main_item_bong.png" />
+            <PlistImageFile Name="nhiemvu_bar_lever.png" Key="nhiemvu_bar_lever.png" />
+            <PlistImageFile Name="nhiemvu_bar_lever2.png" Key="nhiemvu_bar_lever2.png" />
+            <PlistImageFile Name="nhiemvu_icon_nv_hangngay.png" Key="nhiemvu_icon_nv_hangngay.png" />
+            <PlistImageFile Name="nhiemvu_icon_thanhtich.png" Key="nhiemvu_icon_thanhtich.png" />
+            <PlistImageFile Name="nhiemvu_item_achievementt.png" Key="nhiemvu_item_achievementt.png" />
+            <PlistImageFile Name="Quatang_icon_benngoai_duongvien.png" Key="Quatang_icon_benngoai_duongvien.png" />
+            <PlistImageFile Name="Quatang_icon_nhanqua_muavip_hover.png" Key="Quatang_icon_nhanqua_muavip_hover.png" />
+            <PlistImageFile Name="Quatang_icon_QuaGifcode.png" Key="Quatang_icon_QuaGifcode.png" />
+            <PlistImageFile Name="Quatang_icon_Quatangngay.png" Key="Quatang_icon_Quatangngay.png" />
+            <PlistImageFile Name="Quatang_icon_QuaVip.png" Key="Quatang_icon_QuaVip.png" />
+            <PlistImageFile Name="quatang_popup_iconthoat_hover.png" Key="quatang_popup_iconthoat_hover.png" />
+            <PlistImageFile Name="quatang_popup_iconthoat_nomal.png" Key="quatang_popup_iconthoat_nomal.png" />
+            <PlistImageFile Name="ranking_bac.png" Key="ranking_bac.png" />
+            <PlistImageFile Name="ranking_dong.png" Key="ranking_dong.png" />
+            <PlistImageFile Name="ranking_vang.png" Key="ranking_vang.png" />
+            <PlistImageFile Name="rannking_icon_bala.png" Key="rannking_icon_bala.png" />
+            <PlistImageFile Name="rannking_icon_caothu.png" Key="rannking_icon_caothu.png" />
+            <PlistImageFile Name="rannking_icon_daigia.png" Key="rannking_icon_daigia.png" />
+            <PlistImageFile Name="rannking_icon_maubinh.png" Key="rannking_icon_maubinh.png" />
+            <PlistImageFile Name="rannking_icon_slot.png" Key="rannking_icon_slot.png" />
+            <PlistImageFile Name="rannking_icon_ta_la.png" Key="rannking_icon_ta_la.png" />
+            <PlistImageFile Name="rannking_icon_taixiu.png" Key="rannking_icon_taixiu.png" />
+            <PlistImageFile Name="rannking_icon_TLMN.png" Key="rannking_icon_TLMN.png" />
+            <PlistImageFile Name="rannking_icon_top_vip.png" Key="rannking_icon_top_vip.png" />
+            <PlistImageFile Name="rannking_tap_chinh_hoverl.png" Key="rannking_tap_chinh_hoverl.png" />
+            <PlistImageFile Name="rannking_tap_chinh_right_hoverl.png" Key="rannking_tap_chinh_right_hoverl.png" />
+            <PlistImageFile Name="setting_button_fapagev_cskh.png" Key="setting_button_fapagev_cskh.png" />
+            <PlistImageFile Name="setting_off_on_1.png" Key="setting_off_on_1.png" />
+            <PlistImageFile Name="setting_off_on_2.png" Key="setting_off_on_2.png" />
+            <PlistImageFile Name="setting_on_icon_bar.png" Key="setting_on_icon_bar.png" />
+            <PlistImageFile Name="setting_on_off_bar.png" Key="setting_on_off_bar.png" />
+            <PlistImageFile Name="setting_on_off_iocn_bar.png" Key="setting_on_off_iocn_bar.png" />
+            <PlistImageFile Name="shop_icon_check_the.png" Key="shop_icon_check_the.png" />
+            <PlistImageFile Name="shop_icon_check_tien_hover.png" Key="shop_icon_check_tien_hover.png" />
+            <PlistImageFile Name="shop_icon_check_tien_nomal.png" Key="shop_icon_check_tien_nomal.png" />
+            <PlistImageFile Name="shop_icon_cong.png" Key="shop_icon_cong.png" />
+            <PlistImageFile Name="shop_icon_doi_thuong.png" Key="shop_icon_doi_thuong.png" />
+            <PlistImageFile Name="shop_icon_doi_vang.png" Key="shop_icon_doi_vang.png" />
+            <PlistImageFile Name="shop_icon_mua_hover.png" Key="shop_icon_mua_hover.png" />
+            <PlistImageFile Name="shop_icon_muangay.png" Key="shop_icon_muangay.png" />
+            <PlistImageFile Name="shop_icon_nap_appstore.png" Key="shop_icon_nap_appstore.png" />
+            <PlistImageFile Name="shop_icon_nap_lichsugiaodich.png" Key="shop_icon_nap_lichsugiaodich.png" />
+            <PlistImageFile Name="shop_icon_nap_s_m_s.png" Key="shop_icon_nap_s_m_s.png" />
+            <PlistImageFile Name="shop_icon_nap_the.png" Key="shop_icon_nap_the.png" />
+            <PlistImageFile Name="shop_icon_sms_app.png" Key="shop_icon_sms_app.png" />
+            <PlistImageFile Name="shop_icon_tru.png" Key="shop_icon_tru.png" />
+            <PlistImageFile Name="shop_item_vang.png" Key="shop_item_vang.png" />
+            <PlistImageFile Name="shop_ngang_tapscroll.png" Key="shop_ngang_tapscroll.png" />
+            <PlistImageFile Name="shop_ngang_tien.png" Key="shop_ngang_tien.png" />
+            <PlistImageFile Name="slot2_icon_game.png" Key="slot2_icon_game.png" />
+            <PlistImageFile Name="sukien_bar_sukien_duan5_again.png" Key="sukien_bar_sukien_duan5_again.png" />
+            <PlistImageFile Name="sukien_button_iconsukien_duan5_again.png" Key="sukien_button_iconsukien_duan5_again.png" />
+            <PlistImageFile Name="sukien_button_sukien_duan5_again.png" Key="sukien_button_sukien_duan5_again.png" />
+            <PlistImageFile Name="taophong_icon_chec_cuocmax.png" Key="taophong_icon_chec_cuocmax.png" />
+            <PlistImageFile Name="taophong_icon_chec_cuocmax_normal.png" Key="taophong_icon_chec_cuocmax_normal.png" />
+            <PlistImageFile Name="taophong_icon_khoaphong.png" Key="taophong_icon_khoaphong.png" />
+            <PlistImageFile Name="taophong_khung_nhap_chu.png" Key="taophong_khung_nhap_chu.png" />
+            <PlistImageFile Name="thongtincanhan_icon_sao_duan5.png" Key="thongtincanhan_icon_sao_duan5.png" />
+            <PlistImageFile Name="thongtincanhan_icon_thang_duan5.png" Key="thongtincanhan_icon_thang_duan5.png" />
+            <PlistImageFile Name="thongtincanhan_icon_thua_duan5.png" Key="thongtincanhan_icon_thua_duan5.png" />
+            <PlistImageFile Name="thongtincanhan_khung_tien_kimcuong.png" Key="thongtincanhan_khung_tien_kimcuong.png" />
+            <PlistImageFile Name="thongtincanhan_linedoc_phancach_duan5.png" Key="thongtincanhan_linedoc_phancach_duan5.png" />
+            <PlistImageFile Name="Vip_background_den_mo.png" Key="Vip_background_den_mo.png" />
+            <PlistImageFile Name="Vip_icon.png" Key="Vip_icon.png" />
+            <PlistImageFile Name="Vip_icon_inside.png" Key="Vip_icon_inside.png" />
+            <PlistImageFile Name="Vip_icon_mua_hover.png" Key="Vip_icon_mua_hover.png" />
+            <PlistImageFile Name="Vip_icon_mua_nomal.png" Key="Vip_icon_mua_nomal.png" />
+            <PlistImageFile Name="Vip_icon_mua_sao.png" Key="Vip_icon_mua_sao.png" />
+            <PlistImageFile Name="Vip_icon_sao.png" Key="Vip_icon_sao.png" />
+            <PlistImageFile Name="Vip_icon_vang.png" Key="Vip_icon_vang.png" />
+            <PlistImageFile Name="Vip_tap_napgem.png" Key="Vip_tap_napgem.png" />
+            <PlistImageFile Name="Vip_tap_vip.png" Key="Vip_tap_vip.png" />
+            <PlistImageFile Name="Vong_xoay_Gift_Icon.png" Key="Vong_xoay_Gift_Icon.png" />
+            <PlistImageFile Name="wifi_off.png" Key="wifi_off.png" />
+            <PlistImageFile Name="wifi_on.png" Key="wifi_on.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_cards-@1x.png" PListFile="game_cards-@1x.plist" Name=".game_cards-@1x_PList.Dir">
+            <PlistImageFile Name="card_back.png" Key="card_back.png" />
+            <PlistImageFile Name="card10A.png" Key="card10A.png" />
+            <PlistImageFile Name="card10B.png" Key="card10B.png" />
+            <PlistImageFile Name="card10C.png" Key="card10C.png" />
+            <PlistImageFile Name="card10D.png" Key="card10D.png" />
+            <PlistImageFile Name="card1A.png" Key="card1A.png" />
+            <PlistImageFile Name="card1B.png" Key="card1B.png" />
+            <PlistImageFile Name="card1C.png" Key="card1C.png" />
+            <PlistImageFile Name="card1D.png" Key="card1D.png" />
+            <PlistImageFile Name="card2A.png" Key="card2A.png" />
+            <PlistImageFile Name="card2B.png" Key="card2B.png" />
+            <PlistImageFile Name="card2C.png" Key="card2C.png" />
+            <PlistImageFile Name="card2D.png" Key="card2D.png" />
+            <PlistImageFile Name="card3A.png" Key="card3A.png" />
+            <PlistImageFile Name="card3B.png" Key="card3B.png" />
+            <PlistImageFile Name="card3C.png" Key="card3C.png" />
+            <PlistImageFile Name="card3D.png" Key="card3D.png" />
+            <PlistImageFile Name="card4A.png" Key="card4A.png" />
+            <PlistImageFile Name="card4B.png" Key="card4B.png" />
+            <PlistImageFile Name="card4C.png" Key="card4C.png" />
+            <PlistImageFile Name="card4D.png" Key="card4D.png" />
+            <PlistImageFile Name="card5A.png" Key="card5A.png" />
+            <PlistImageFile Name="card5B.png" Key="card5B.png" />
+            <PlistImageFile Name="card5C.png" Key="card5C.png" />
+            <PlistImageFile Name="card5D.png" Key="card5D.png" />
+            <PlistImageFile Name="card6A.png" Key="card6A.png" />
+            <PlistImageFile Name="card6B.png" Key="card6B.png" />
+            <PlistImageFile Name="card6C.png" Key="card6C.png" />
+            <PlistImageFile Name="card6D.png" Key="card6D.png" />
+            <PlistImageFile Name="card7A.png" Key="card7A.png" />
+            <PlistImageFile Name="card7B.png" Key="card7B.png" />
+            <PlistImageFile Name="card7C.png" Key="card7C.png" />
+            <PlistImageFile Name="card7D.png" Key="card7D.png" />
+            <PlistImageFile Name="card8A.png" Key="card8A.png" />
+            <PlistImageFile Name="card8B.png" Key="card8B.png" />
+            <PlistImageFile Name="card8C.png" Key="card8C.png" />
+            <PlistImageFile Name="card8D.png" Key="card8D.png" />
+            <PlistImageFile Name="card9A.png" Key="card9A.png" />
+            <PlistImageFile Name="card9B.png" Key="card9B.png" />
+            <PlistImageFile Name="card9C.png" Key="card9C.png" />
+            <PlistImageFile Name="card9D.png" Key="card9D.png" />
+            <PlistImageFile Name="cardJA.png" Key="cardJA.png" />
+            <PlistImageFile Name="cardJB.png" Key="cardJB.png" />
+            <PlistImageFile Name="cardJC.png" Key="cardJC.png" />
+            <PlistImageFile Name="cardJD.png" Key="cardJD.png" />
+            <PlistImageFile Name="cardKA.png" Key="cardKA.png" />
+            <PlistImageFile Name="cardKB.png" Key="cardKB.png" />
+            <PlistImageFile Name="cardKC.png" Key="cardKC.png" />
+            <PlistImageFile Name="cardKD.png" Key="cardKD.png" />
+            <PlistImageFile Name="cardQA.png" Key="cardQA.png" />
+            <PlistImageFile Name="cardQB.png" Key="cardQB.png" />
+            <PlistImageFile Name="cardQC.png" Key="cardQC.png" />
+            <PlistImageFile Name="cardQD.png" Key="cardQD.png" />
+            <PlistImageFile Name="gameplay_effec_chonbai.png" Key="gameplay_effec_chonbai.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_maubinh-1@1x.png" PListFile="game_maubinh-1@1x.plist" Name=".game_maubinh-1@1x_PList.Dir">
+            <PlistImageFile Name="gameplay_banner_sochi_bac_max.png" Key="gameplay_banner_sochi_bac_max.png" />
+            <PlistImageFile Name="gameplay_banner_sochi_bac_min.png" Key="gameplay_banner_sochi_bac_min.png" />
+            <PlistImageFile Name="gameplay_banner_sochi_dacbiet.png" Key="gameplay_banner_sochi_dacbiet.png" />
+            <PlistImageFile Name="gameplay_banner_sochi_vang_max.png" Key="gameplay_banner_sochi_vang_max.png" />
+            <PlistImageFile Name="gameplay_banner_sochi_vang_min.png" Key="gameplay_banner_sochi_vang_min.png" />
+            <PlistImageFile Name="gameplay_banner_vang.png" Key="gameplay_banner_vang.png" />
+            <PlistImageFile Name="gameplay_banner_xam.png" Key="gameplay_banner_xam.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_slot-1@1x.png" PListFile="game_slot-1@1x.plist" Name=".game_slot-1@1x_PList.Dir">
+            <PlistImageFile Name="9line_icon.png" Key="9line_icon.png" />
+            <PlistImageFile Name="Box_Payout.png" Key="Box_Payout.png" />
+            <PlistImageFile Name="Jackpot_bg.png" Key="Jackpot_bg.png" />
+            <PlistImageFile Name="muccuoc_green_bg.png" Key="muccuoc_green_bg.png" />
+            <PlistImageFile Name="payline_1.png" Key="payline_1.png" />
+            <PlistImageFile Name="payline_2.png" Key="payline_2.png" />
+            <PlistImageFile Name="payline_3.png" Key="payline_3.png" />
+            <PlistImageFile Name="payline_4.png" Key="payline_4.png" />
+            <PlistImageFile Name="payline_5.png" Key="payline_5.png" />
+            <PlistImageFile Name="payline_6.png" Key="payline_6.png" />
+            <PlistImageFile Name="payline_7.png" Key="payline_7.png" />
+            <PlistImageFile Name="payline_8.png" Key="payline_8.png" />
+            <PlistImageFile Name="payline_9.png" Key="payline_9.png" />
+            <PlistImageFile Name="Quay_button.png" Key="Quay_button.png" />
+            <PlistImageFile Name="slot_1.png" Key="slot_1.png" />
+            <PlistImageFile Name="slot_10.png" Key="slot_10.png" />
+            <PlistImageFile Name="slot_11.png" Key="slot_11.png" />
+            <PlistImageFile Name="slot_12.png" Key="slot_12.png" />
+            <PlistImageFile Name="slot_13.png" Key="slot_13.png" />
+            <PlistImageFile Name="slot_2.png" Key="slot_2.png" />
+            <PlistImageFile Name="slot_3.png" Key="slot_3.png" />
+            <PlistImageFile Name="slot_4.png" Key="slot_4.png" />
+            <PlistImageFile Name="slot_5.png" Key="slot_5.png" />
+            <PlistImageFile Name="slot_6.png" Key="slot_6.png" />
+            <PlistImageFile Name="slot_7.png" Key="slot_7.png" />
+            <PlistImageFile Name="slot_8.png" Key="slot_8.png" />
+            <PlistImageFile Name="slot_9.png" Key="slot_9.png" />
+            <PlistImageFile Name="SLOT02.png" Key="SLOT02.png" />
+            <PlistImageFile Name="slotmachines_icon_help.png" Key="slotmachines_icon_help.png" />
+            <PlistImageFile Name="slotmachines_icon_help_hover.png" Key="slotmachines_icon_help_hover.png" />
+            <PlistImageFile Name="slotmachines_icon_quayngay.png" Key="slotmachines_icon_quayngay.png" />
+            <PlistImageFile Name="slotmachines_icon_quayngay_hover.png" Key="slotmachines_icon_quayngay_hover.png" />
+            <PlistImageFile Name="slotmachines_icon_scroll.png" Key="slotmachines_icon_scroll.png" />
+            <PlistImageFile Name="slotmachines_jackpot.png" Key="slotmachines_jackpot.png" />
+            <PlistImageFile Name="slotmachines_line_scroll.png" Key="slotmachines_line_scroll.png" />
+            <PlistImageFile Name="slotmachines_tieude.png" Key="slotmachines_tieude.png" />
+            <PlistImageFile Name="slotmachines_tieude_line.png" Key="slotmachines_tieude_line.png" />
+            <PlistImageFile Name="Tong_cuoc_icon.png" Key="Tong_cuoc_icon.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_slot2-1@1x.png" PListFile="game_slot2-1@1x.plist" Name=".game_slot2-1@1x_PList.Dir">
+            <PlistImageFile Name="slot2_1.png" Key="slot2_1.png" />
+            <PlistImageFile Name="slot2_10.png" Key="slot2_10.png" />
+            <PlistImageFile Name="slot2_11.png" Key="slot2_11.png" />
+            <PlistImageFile Name="slot2_12.png" Key="slot2_12.png" />
+            <PlistImageFile Name="slot2_2.png" Key="slot2_2.png" />
+            <PlistImageFile Name="slot2_3.png" Key="slot2_3.png" />
+            <PlistImageFile Name="slot2_4.png" Key="slot2_4.png" />
+            <PlistImageFile Name="slot2_5.png" Key="slot2_5.png" />
+            <PlistImageFile Name="slot2_6.png" Key="slot2_6.png" />
+            <PlistImageFile Name="slot2_7.png" Key="slot2_7.png" />
+            <PlistImageFile Name="slot2_8.png" Key="slot2_8.png" />
+            <PlistImageFile Name="slot2_9.png" Key="slot2_9.png" />
+            <PlistImageFile Name="slot2_bg_jackpot.png" Key="slot2_bg_jackpot.png" />
+            <PlistImageFile Name="slot2_btn_auto.png" Key="slot2_btn_auto.png" />
+            <PlistImageFile Name="slot2_btn_bet.png" Key="slot2_btn_bet.png" />
+            <PlistImageFile Name="slot2_btn_bet2.png" Key="slot2_btn_bet2.png" />
+            <PlistImageFile Name="slot2_btn_close.png" Key="slot2_btn_close.png" />
+            <PlistImageFile Name="slot2_btn_help.png" Key="slot2_btn_help.png" />
+            <PlistImageFile Name="slot2_btn_rank.png" Key="slot2_btn_rank.png" />
+            <PlistImageFile Name="slot2_itembg.png" Key="slot2_itembg.png" />
+            <PlistImageFile Name="slot2_line_vertical.png" Key="slot2_line_vertical.png" />
+            <PlistImageFile Name="slot2_title.png" Key="slot2_title.png" />
+            <PlistImageFile Name="slot2_value_bg.png" Key="slot2_value_bg.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_slot3-1@1x.png" PListFile="game_slot3-1@1x.plist" Name=".game_slot3-1@1x_PList.Dir">
+            <PlistImageFile Name="slot3_1_item_8.png" Key="slot3_1_item_8.png" />
+            <PlistImageFile Name="slot3_bg_coin.png" Key="slot3_bg_coin.png" />
+            <PlistImageFile Name="slot3_btn_auto.png" Key="slot3_btn_auto.png" />
+            <PlistImageFile Name="slot3_btn_close.png" Key="slot3_btn_close.png" />
+            <PlistImageFile Name="slot3_btn_dung_auto.png" Key="slot3_btn_dung_auto.png" />
+            <PlistImageFile Name="slot3_btn_quay.png" Key="slot3_btn_quay.png" />
+            <PlistImageFile Name="slot3_btn_x1.png" Key="slot3_btn_x1.png" />
+            <PlistImageFile Name="slot3_choose_cung_can_thanh.png" Key="slot3_choose_cung_can_thanh.png" />
+            <PlistImageFile Name="slot3_choose_Dien hy cung.png" Key="slot3_choose_Dien hy cung.png" />
+            <PlistImageFile Name="slot3_choose_ngu_hoa_vien.png" Key="slot3_choose_ngu_hoa_vien.png" />
+            <PlistImageFile Name="slot3_choose_popup_bg.png" Key="slot3_choose_popup_bg.png" />
+            <PlistImageFile Name="slot3_choose_text_chonphong.png" Key="slot3_choose_text_chonphong.png" />
+            <PlistImageFile Name="slot3_effect_coin_bg.png" Key="slot3_effect_coin_bg.png" />
+            <PlistImageFile Name="slot3_effect_coin_fly.png" Key="slot3_effect_coin_fly.png" />
+            <PlistImageFile Name="slot3_effect_text_nohu.png" Key="slot3_effect_text_nohu.png" />
+            <PlistImageFile Name="slot3_effect_text_thanglon.png" Key="slot3_effect_text_thanglon.png" />
+            <PlistImageFile Name="slot3_effect_text_thuong_vq.png" Key="slot3_effect_text_thuong_vq.png" />
+            <PlistImageFile Name="slot3_gold.png" Key="slot3_gold.png" />
+            <PlistImageFile Name="slot3_history_line_doc.png" Key="slot3_history_line_doc.png" />
+            <PlistImageFile Name="slot3_history_line_ngang.png" Key="slot3_history_line_ngang.png" />
+            <PlistImageFile Name="slot3_khung.png" Key="slot3_khung.png" />
+            <PlistImageFile Name="slot3_line_20.png" Key="slot3_line_20.png" />
+            <PlistImageFile Name="slot3_logo_dienhycongluoc.png" Key="slot3_logo_dienhycongluoc.png" />
+            <PlistImageFile Name="slot3_minigamegold.png" Key="slot3_minigamegold.png" />
+            <PlistImageFile Name="slot3_minigameitem_0.png" Key="slot3_minigameitem_0.png" />
+            <PlistImageFile Name="slot3_minigametext_minigame.png" Key="slot3_minigametext_minigame.png" />
+            <PlistImageFile Name="slot3_rank_line_doc.png" Key="slot3_rank_line_doc.png" />
+            <PlistImageFile Name="slot3_rank_line_ngang.png" Key="slot3_rank_line_ngang.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_slot3-2@1x.png" PListFile="game_slot3-2@1x.plist" Name=".game_slot3-2@1x_PList.Dir">
+            <PlistImageFile Name="fx_slot3_win_fx_00000.png" Key="fx/slot3_win_fx_00000.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00005.png" Key="fx/slot3_win_fx_00005.png" />
+            <PlistImageFile Name="slot3_1_item_10.png" Key="slot3_1_item_10.png" />
+            <PlistImageFile Name="slot3_1_item_11.png" Key="slot3_1_item_11.png" />
+            <PlistImageFile Name="slot3_1_item_12.png" Key="slot3_1_item_12.png" />
+            <PlistImageFile Name="slot3_1_item_4.png" Key="slot3_1_item_4.png" />
+            <PlistImageFile Name="slot3_2_item_10.png" Key="slot3_2_item_10.png" />
+            <PlistImageFile Name="slot3_2_item_11.png" Key="slot3_2_item_11.png" />
+            <PlistImageFile Name="slot3_2_item_12.png" Key="slot3_2_item_12.png" />
+            <PlistImageFile Name="slot3_2_item_6.png" Key="slot3_2_item_6.png" />
+            <PlistImageFile Name="slot3_3_item_1.png" Key="slot3_3_item_1.png" />
+            <PlistImageFile Name="slot3_3_item_10.png" Key="slot3_3_item_10.png" />
+            <PlistImageFile Name="slot3_3_item_11.png" Key="slot3_3_item_11.png" />
+            <PlistImageFile Name="slot3_3_item_12.png" Key="slot3_3_item_12.png" />
+            <PlistImageFile Name="slot3_3_item_3.png" Key="slot3_3_item_3.png" />
+            <PlistImageFile Name="slot3_3_item_7.png" Key="slot3_3_item_7.png" />
+            <PlistImageFile Name="slot3_9line_icon.png" Key="slot3_9line_icon.png" />
+            <PlistImageFile Name="slot3_bg_can_long.png" Key="slot3_bg_can_long.png" />
+            <PlistImageFile Name="slot3_bg_dien_hy.png" Key="slot3_bg_dien_hy.png" />
+            <PlistImageFile Name="slot3_btn_x2.png" Key="slot3_btn_x2.png" />
+            <PlistImageFile Name="slot3_choose_hu.png" Key="slot3_choose_hu.png" />
+            <PlistImageFile Name="slot3_cuoc.png" Key="slot3_cuoc.png" />
+            <PlistImageFile Name="slot3_effect_as copy 2.png" Key="slot3_effect_as copy 2.png" />
+            <PlistImageFile Name="slot3_effect_text_giauto.png" Key="slot3_effect_text_giauto.png" />
+            <PlistImageFile Name="slot3_history_bg.png" Key="slot3_history_bg.png" />
+            <PlistImageFile Name="slot3_history_text_lsc.png" Key="slot3_history_text_lsc.png" />
+            <PlistImageFile Name="slot3_hu.png" Key="slot3_hu.png" />
+            <PlistImageFile Name="slot3_khung_bg.png" Key="slot3_khung_bg.png" />
+            <PlistImageFile Name="slot3_line_22.png" Key="slot3_line_22.png" />
+            <PlistImageFile Name="slot3_line_23.png" Key="slot3_line_23.png" />
+            <PlistImageFile Name="slot3_line_24.png" Key="slot3_line_24.png" />
+            <PlistImageFile Name="slot3_line_bg.png" Key="slot3_line_bg.png" />
+            <PlistImageFile Name="slot3_line_btn_bochon.png" Key="slot3_line_btn_bochon.png" />
+            <PlistImageFile Name="slot3_line_btn_bochon_1.png" Key="slot3_line_btn_bochon_1.png" />
+            <PlistImageFile Name="slot3_line_btn_dongchan.png" Key="slot3_line_btn_dongchan.png" />
+            <PlistImageFile Name="slot3_line_btn_dongchan_1.png" Key="slot3_line_btn_dongchan_1.png" />
+            <PlistImageFile Name="slot3_line_btn_dongle.png" Key="slot3_line_btn_dongle.png" />
+            <PlistImageFile Name="slot3_line_btn_dongle_1.png" Key="slot3_line_btn_dongle_1.png" />
+            <PlistImageFile Name="slot3_line_btn_tatca_0.png" Key="slot3_line_btn_tatca_0.png" />
+            <PlistImageFile Name="slot3_line_btn_tatca_1.png" Key="slot3_line_btn_tatca_1.png" />
+            <PlistImageFile Name="slot3_line_text_chondong.png" Key="slot3_line_text_chondong.png" />
+            <PlistImageFile Name="slot3_rank_bg.png" Key="slot3_rank_bg.png" />
+            <PlistImageFile Name="slot3_rank_text_bvd.png" Key="slot3_rank_text_bvd.png" />
+            <PlistImageFile Name="slot3_thang.png" Key="slot3_thang.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_slot3-3@1x.png" PListFile="game_slot3-3@1x.plist" Name=".game_slot3-3@1x_PList.Dir">
+            <PlistImageFile Name="fx_slot3_win_fx_00001.png" Key="fx/slot3_win_fx_00001.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00002.png" Key="fx/slot3_win_fx_00002.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00003.png" Key="fx/slot3_win_fx_00003.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00004.png" Key="fx/slot3_win_fx_00004.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00006.png" Key="fx/slot3_win_fx_00006.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00007.png" Key="fx/slot3_win_fx_00007.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00008.png" Key="fx/slot3_win_fx_00008.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00009.png" Key="fx/slot3_win_fx_00009.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00010.png" Key="fx/slot3_win_fx_00010.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00011.png" Key="fx/slot3_win_fx_00011.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00012.png" Key="fx/slot3_win_fx_00012.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00013.png" Key="fx/slot3_win_fx_00013.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00014.png" Key="fx/slot3_win_fx_00014.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00015.png" Key="fx/slot3_win_fx_00015.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00016.png" Key="fx/slot3_win_fx_00016.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00017.png" Key="fx/slot3_win_fx_00017.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00018.png" Key="fx/slot3_win_fx_00018.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00019.png" Key="fx/slot3_win_fx_00019.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00020.png" Key="fx/slot3_win_fx_00020.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00021.png" Key="fx/slot3_win_fx_00021.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00022.png" Key="fx/slot3_win_fx_00022.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00023.png" Key="fx/slot3_win_fx_00023.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00024.png" Key="fx/slot3_win_fx_00024.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00025.png" Key="fx/slot3_win_fx_00025.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00026.png" Key="fx/slot3_win_fx_00026.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00027.png" Key="fx/slot3_win_fx_00027.png" />
+            <PlistImageFile Name="fx_slot3_win_fx_00028.png" Key="fx/slot3_win_fx_00028.png" />
+            <PlistImageFile Name="slot3_1_item_1.png" Key="slot3_1_item_1.png" />
+            <PlistImageFile Name="slot3_1_item_2.png" Key="slot3_1_item_2.png" />
+            <PlistImageFile Name="slot3_1_item_3.png" Key="slot3_1_item_3.png" />
+            <PlistImageFile Name="slot3_1_item_5.png" Key="slot3_1_item_5.png" />
+            <PlistImageFile Name="slot3_1_item_6.png" Key="slot3_1_item_6.png" />
+            <PlistImageFile Name="slot3_1_item_7.png" Key="slot3_1_item_7.png" />
+            <PlistImageFile Name="slot3_1_item_9.png" Key="slot3_1_item_9.png" />
+            <PlistImageFile Name="slot3_2_item_1.png" Key="slot3_2_item_1.png" />
+            <PlistImageFile Name="slot3_2_item_2.png" Key="slot3_2_item_2.png" />
+            <PlistImageFile Name="slot3_2_item_3.png" Key="slot3_2_item_3.png" />
+            <PlistImageFile Name="slot3_2_item_4.png" Key="slot3_2_item_4.png" />
+            <PlistImageFile Name="slot3_2_item_5.png" Key="slot3_2_item_5.png" />
+            <PlistImageFile Name="slot3_2_item_7.png" Key="slot3_2_item_7.png" />
+            <PlistImageFile Name="slot3_2_item_8.png" Key="slot3_2_item_8.png" />
+            <PlistImageFile Name="slot3_2_item_9.png" Key="slot3_2_item_9.png" />
+            <PlistImageFile Name="slot3_3_item_2.png" Key="slot3_3_item_2.png" />
+            <PlistImageFile Name="slot3_3_item_4.png" Key="slot3_3_item_4.png" />
+            <PlistImageFile Name="slot3_3_item_5.png" Key="slot3_3_item_5.png" />
+            <PlistImageFile Name="slot3_3_item_6.png" Key="slot3_3_item_6.png" />
+            <PlistImageFile Name="slot3_3_item_8.png" Key="slot3_3_item_8.png" />
+            <PlistImageFile Name="slot3_3_item_9.png" Key="slot3_3_item_9.png" />
+            <PlistImageFile Name="slot3_btn_back.png" Key="slot3_btn_back.png" />
+            <PlistImageFile Name="slot3_btn_choithu.png" Key="slot3_btn_choithu.png" />
+            <PlistImageFile Name="slot3_btn_help.png" Key="slot3_btn_help.png" />
+            <PlistImageFile Name="slot3_btn_ls.png" Key="slot3_btn_ls.png" />
+            <PlistImageFile Name="slot3_btn_lshu.png" Key="slot3_btn_lshu.png" />
+            <PlistImageFile Name="slot3_btn_setting.png" Key="slot3_btn_setting.png" />
+            <PlistImageFile Name="slot3_dong_cuoc.png" Key="slot3_dong_cuoc.png" />
+            <PlistImageFile Name="slot3_history_btn_1.png" Key="slot3_history_btn_1.png" />
+            <PlistImageFile Name="slot3_history_btn_1_1.png" Key="slot3_history_btn_1_1.png" />
+            <PlistImageFile Name="slot3_history_btn_2.png" Key="slot3_history_btn_2.png" />
+            <PlistImageFile Name="slot3_history_btn_2_1.png" Key="slot3_history_btn_2_1.png" />
+            <PlistImageFile Name="slot3_history_btn_3.png" Key="slot3_history_btn_3.png" />
+            <PlistImageFile Name="slot3_history_btn_3_1.png" Key="slot3_history_btn_3_1.png" />
+            <PlistImageFile Name="slot3_history_btn_4.png" Key="slot3_history_btn_4.png" />
+            <PlistImageFile Name="slot3_history_btn_4_1.png" Key="slot3_history_btn_4_1.png" />
+            <PlistImageFile Name="slot3_line_1.png" Key="slot3_line_1.png" />
+            <PlistImageFile Name="slot3_line_10.png" Key="slot3_line_10.png" />
+            <PlistImageFile Name="slot3_line_11.png" Key="slot3_line_11.png" />
+            <PlistImageFile Name="slot3_line_12.png" Key="slot3_line_12.png" />
+            <PlistImageFile Name="slot3_line_13.png" Key="slot3_line_13.png" />
+            <PlistImageFile Name="slot3_line_14.png" Key="slot3_line_14.png" />
+            <PlistImageFile Name="slot3_line_15.png" Key="slot3_line_15.png" />
+            <PlistImageFile Name="slot3_line_16.png" Key="slot3_line_16.png" />
+            <PlistImageFile Name="slot3_line_17.png" Key="slot3_line_17.png" />
+            <PlistImageFile Name="slot3_line_18.png" Key="slot3_line_18.png" />
+            <PlistImageFile Name="slot3_line_19.png" Key="slot3_line_19.png" />
+            <PlistImageFile Name="slot3_line_2.png" Key="slot3_line_2.png" />
+            <PlistImageFile Name="slot3_line_21.png" Key="slot3_line_21.png" />
+            <PlistImageFile Name="slot3_line_25.png" Key="slot3_line_25.png" />
+            <PlistImageFile Name="slot3_line_3.png" Key="slot3_line_3.png" />
+            <PlistImageFile Name="slot3_line_4.png" Key="slot3_line_4.png" />
+            <PlistImageFile Name="slot3_line_5.png" Key="slot3_line_5.png" />
+            <PlistImageFile Name="slot3_line_6.png" Key="slot3_line_6.png" />
+            <PlistImageFile Name="slot3_line_7.png" Key="slot3_line_7.png" />
+            <PlistImageFile Name="slot3_line_8.png" Key="slot3_line_8.png" />
+            <PlistImageFile Name="slot3_line_9.png" Key="slot3_line_9.png" />
+            <PlistImageFile Name="slot3_muc_cuoc.png" Key="slot3_muc_cuoc.png" />
+            <PlistImageFile Name="slot3_rank_btn_1.png" Key="slot3_rank_btn_1.png" />
+            <PlistImageFile Name="slot3_rank_btn_1_1.png" Key="slot3_rank_btn_1_1.png" />
+            <PlistImageFile Name="slot3_rank_btn_2.png" Key="slot3_rank_btn_2.png" />
+            <PlistImageFile Name="slot3_rank_btn_2_1.png" Key="slot3_rank_btn_2_1.png" />
+            <PlistImageFile Name="slot3_rank_btn_3.png" Key="slot3_rank_btn_3.png" />
+            <PlistImageFile Name="slot3_rank_btn_3_1.png" Key="slot3_rank_btn_3_1.png" />
+            <PlistImageFile Name="slot3_rank_btn_4.png" Key="slot3_rank_btn_4.png" />
+            <PlistImageFile Name="slot3_rank_btn_4_1.png" Key="slot3_rank_btn_4_1.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="game_taixiu-1@1x.png" PListFile="game_taixiu-1@1x.plist" Name=".game_taixiu-1@1x_PList.Dir">
+            <PlistImageFile Name="main_btn_soicau.png" Key="main_btn_soicau.png" />
+            <PlistImageFile Name="soicau_iteminside.png" Key="soicau_iteminside.png" />
+            <PlistImageFile Name="soicau_tai.png" Key="soicau_tai.png" />
+            <PlistImageFile Name="soicau_title.png" Key="soicau_title.png" />
+            <PlistImageFile Name="soicau_title_bg.png" Key="soicau_title_bg.png" />
+            <PlistImageFile Name="soicau_xiu.png" Key="soicau_xiu.png" />
+            <PlistImageFile Name="tai_iconnho.png" Key="tai_iconnho.png" />
+            <PlistImageFile Name="taiuxiu_nguoi_bg.png" Key="taiuxiu_nguoi_bg.png" />
+            <PlistImageFile Name="taixieu_dice_1.png" Key="taixieu_dice_1.png" />
+            <PlistImageFile Name="taixieu_dice_2.png" Key="taixieu_dice_2.png" />
+            <PlistImageFile Name="taixieu_dice_3.png" Key="taixieu_dice_3.png" />
+            <PlistImageFile Name="taixieu_dice_4.png" Key="taixieu_dice_4.png" />
+            <PlistImageFile Name="taixieu_dice_5.png" Key="taixieu_dice_5.png" />
+            <PlistImageFile Name="taixieu_dice_6.png" Key="taixieu_dice_6.png" />
+            <PlistImageFile Name="taixieu_dice_icon_1.png" Key="taixieu_dice_icon_1.png" />
+            <PlistImageFile Name="taixieu_dice_icon_2.png" Key="taixieu_dice_icon_2.png" />
+            <PlistImageFile Name="taixieu_dice_icon_3.png" Key="taixieu_dice_icon_3.png" />
+            <PlistImageFile Name="taixieu_dice_icon_4.png" Key="taixieu_dice_icon_4.png" />
+            <PlistImageFile Name="taixieu_dice_icon_5.png" Key="taixieu_dice_icon_5.png" />
+            <PlistImageFile Name="taixieu_dice_icon_6.png" Key="taixieu_dice_icon_6.png" />
+            <PlistImageFile Name="taixieu_icon_dongy.png" Key="taixieu_icon_dongy.png" />
+            <PlistImageFile Name="taixieu_icon_dongy_hover.png" Key="taixieu_icon_dongy_hover.png" />
+            <PlistImageFile Name="taixieu_icon_lichsu_tai.png" Key="taixieu_icon_lichsu_tai.png" />
+            <PlistImageFile Name="taixieu_icon_lichsu_xieu.png" Key="taixieu_icon_lichsu_xieu.png" />
+            <PlistImageFile Name="taixieu_icon_nguoichoi.png" Key="taixieu_icon_nguoichoi.png" />
+            <PlistImageFile Name="taixieu_icon_scroll_tai.png" Key="taixieu_icon_scroll_tai.png" />
+            <PlistImageFile Name="taixieu_icon_scroll_xiu.png" Key="taixieu_icon_scroll_xiu.png" />
+            <PlistImageFile Name="taixieu_icon_tai.png" Key="taixieu_icon_tai.png" />
+            <PlistImageFile Name="taixieu_icon_tien.png" Key="taixieu_icon_tien.png" />
+            <PlistImageFile Name="taixieu_icon_xieu.png" Key="taixieu_icon_xieu.png" />
+            <PlistImageFile Name="taixieu_khung_cuoc.png" Key="taixieu_khung_cuoc.png" />
+            <PlistImageFile Name="taixieu_khung_dem_so.png" Key="taixieu_khung_dem_so.png" />
+            <PlistImageFile Name="taixieu_khung_icon.png" Key="taixieu_khung_icon.png" />
+            <PlistImageFile Name="taixieu_khung_nhaptien.png" Key="taixieu_khung_nhaptien.png" />
+            <PlistImageFile Name="taixieu_khung_thongtin.png" Key="taixieu_khung_thongtin.png" />
+            <PlistImageFile Name="taixieu_khung_tiencuoc.png" Key="taixieu_khung_tiencuoc.png" />
+            <PlistImageFile Name="taixieu_line_sang_dongy.png" Key="taixieu_line_sang_dongy.png" />
+            <PlistImageFile Name="taixieu_line_scroll.png" Key="taixieu_line_scroll.png" />
+            <PlistImageFile Name="taixieu_linesang_lichsu_xieu.png" Key="taixieu_linesang_lichsu_xieu.png" />
+            <PlistImageFile Name="taixieu_linesang_tai.png" Key="taixieu_linesang_tai.png" />
+            <PlistImageFile Name="taixieu_linesang_xieu.png" Key="taixieu_linesang_xieu.png" />
+            <PlistImageFile Name="taixieu_linesangs_lichsu_tai.png" Key="taixieu_linesangs_lichsu_tai.png" />
+            <PlistImageFile Name="taixiu_bg.png" Key="taixiu_bg.png" />
+            <PlistImageFile Name="taixiu_bg_giatri.png" Key="taixiu_bg_giatri.png" />
+            <PlistImageFile Name="taixiu_bot_bg.png" Key="taixiu_bot_bg.png" />
+            <PlistImageFile Name="taixiu_btn_1.png" Key="taixiu_btn_1.png" />
+            <PlistImageFile Name="taixiu_btn_2.png" Key="taixiu_btn_2.png" />
+            <PlistImageFile Name="taixiu_btn_3.png" Key="taixiu_btn_3.png" />
+            <PlistImageFile Name="taixiu_btn_bet.png" Key="taixiu_btn_bet.png" />
+            <PlistImageFile Name="taixiu_btn_nan1.png" Key="taixiu_btn_nan1.png" />
+            <PlistImageFile Name="taixiu_btn_nan2.png" Key="taixiu_btn_nan2.png" />
+            <PlistImageFile Name="taixiu_hi_1.png" Key="taixiu_hi_1.png" />
+            <PlistImageFile Name="taixiu_hi_2.png" Key="taixiu_hi_2.png" />
+            <PlistImageFile Name="taixiu_khungtron1.png" Key="taixiu_khungtron1.png" />
+            <PlistImageFile Name="taixiu_khungtron2.png" Key="taixiu_khungtron2.png" />
+            <PlistImageFile Name="taixiu_khungvalue.png" Key="taixiu_khungvalue.png" />
+            <PlistImageFile Name="taixiu_kiemchung.png" Key="taixiu_kiemchung.png" />
+            <PlistImageFile Name="taixiu_kiemchungbg.png" Key="taixiu_kiemchungbg.png" />
+            <PlistImageFile Name="taixiu_nan.png" Key="taixiu_nan.png" />
+            <PlistImageFile Name="taixiu_share.png" Key="taixiu_share.png" />
+            <PlistImageFile Name="taixiu_tai.effect.png" Key="taixiu_tai.effect.png" />
+            <PlistImageFile Name="taixiu_tai.png" Key="taixiu_tai.png" />
+            <PlistImageFile Name="taixiu_title.png" Key="taixiu_title.png" />
+            <PlistImageFile Name="taixiu_title_bot.png" Key="taixiu_title_bot.png" />
+            <PlistImageFile Name="taixiu_xiu.png" Key="taixiu_xiu.png" />
+            <PlistImageFile Name="taixiu_xiueffect.png" Key="taixiu_xiueffect.png" />
+            <PlistImageFile Name="xiu_iconho.png" Key="xiu_iconho.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="gift-@1x.png" PListFile="gift-@1x.plist" Name=".gift-@1x_PList.Dir">
+            <PlistImageFile Name="gem_1.png" Key="gem_1.png" />
+            <PlistImageFile Name="gem_2.png" Key="gem_2.png" />
+            <PlistImageFile Name="gem_3.png" Key="gem_3.png" />
+            <PlistImageFile Name="gem_4.png" Key="gem_4.png" />
+            <PlistImageFile Name="gem_5.png" Key="gem_5.png" />
+            <PlistImageFile Name="gem_6.png" Key="gem_6.png" />
+            <PlistImageFile Name="gem_7.png" Key="gem_7.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ngay1.png" Key="Quatang_icon_vang_ngay1.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ngay2.png" Key="Quatang_icon_vang_ngay2.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ngay3.png" Key="Quatang_icon_vang_ngay3.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ngay4.png" Key="Quatang_icon_vang_ngay4.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ngay5.png" Key="Quatang_icon_vang_ngay5.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ngay6.png" Key="Quatang_icon_vang_ngay6.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ngay7.png" Key="Quatang_icon_vang_ngay7.png" />
+            <PlistImageFile Name="Quatang_icon_vang_ruongdong.png" Key="Quatang_icon_vang_ruongdong.png" />
+            <PlistImageFile Name="Quatang_Khung_diemdanh.png" Key="Quatang_Khung_diemdanh.png" />
+          </PlistImageFolder>
+          <Folder Name="items">
+            <Image Name="item00.png" />
+            <Image Name="item01.png" />
+            <Image Name="item02.png" />
+            <Image Name="item03.png" />
+            <Image Name="item04.png" />
+            <Image Name="item05.png" />
+            <Image Name="item06.png" />
+            <Image Name="item07.jpg" />
+            <Image Name="item08.png" />
+            <Image Name="item09.png" />
+            <Image Name="item10.jpg" />
+            <Image Name="item11.jpg" />
+          </Folder>
+          <PlistImageFolder Image="jackpot-1@1x.png" PListFile="jackpot-1@1x.plist" Name=".jackpot-1@1x_PList.Dir">
+            <PlistImageFile Name="coin.png" Key="coin.png" />
+            <PlistImageFile Name="light.png" Key="light.png" />
+            <PlistImageFile Name="pot.png" Key="pot.png" />
+            <PlistImageFile Name="Star.png" Key="Star.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="jackpot-2@1x.png" PListFile="jackpot-2@1x.plist" Name=".jackpot-2@1x_PList.Dir">
+            <PlistImageFile Name="text_light.png" Key="text_light.png" />
+          </PlistImageFolder>
+          <Folder Name="lobby">
+            <Image Name="bg_downtime_minigame.png" />
+            <Image Name="btn_support.png" />
+            <Image Name="support_menu_dropdown.png" />
+          </Folder>
+          <PlistImageFolder Image="lobby-banner-1@1x.png" PListFile="lobby-banner-1@1x.plist" Name=".lobby-banner-1@1x_PList.Dir">
+            <PlistImageFile Name="lobby_event_banner_1.png" Key="lobby_event_banner_1.png" />
+            <PlistImageFile Name="lobby_event_banner_2.png" Key="lobby_event_banner_2.png" />
+            <PlistImageFile Name="lobby_event_banner_3.png" Key="lobby_event_banner_3.png" />
+            <PlistImageFile Name="lobby_event_banner_4.png" Key="lobby_event_banner_4.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="lobbyv2-1@1x.png" PListFile="lobbyv2-1@1x.plist" Name=".lobbyv2-1@1x_PList.Dir">
+            <PlistImageFile Name="lobby_v2_bg_hu.png" Key="lobby_v2_bg_hu.png" />
+            <PlistImageFile Name="lobby_v2_BTN ALL.png" Key="lobby_v2_BTN ALL.png" />
+            <PlistImageFile Name="lobby_v2_BTN BAI LA.png" Key="lobby_v2_BTN BAI LA.png" />
+            <PlistImageFile Name="lobby_v2_BTN SLOT.png" Key="lobby_v2_BTN SLOT.png" />
+            <PlistImageFile Name="lobby_v2_btn Sukien.png" Key="lobby_v2_btn Sukien.png" />
+            <PlistImageFile Name="lobby_v2_btn_listhu.png" Key="lobby_v2_btn_listhu.png" />
+            <PlistImageFile Name="lobby_v2_btn_nap_the.png" Key="lobby_v2_btn_nap_the.png" />
+            <PlistImageFile Name="lobby_v2_Candy.png" Key="lobby_v2_Candy.png" />
+            <PlistImageFile Name="lobby_v2_Dien Hi.png" Key="lobby_v2_Dien Hi.png" />
+            <PlistImageFile Name="lobby_v2_Halloween.png" Key="lobby_v2_Halloween.png" />
+            <PlistImageFile Name="lobby_v2_Main_bar_lever_money copy 3.png" Key="lobby_v2_Main_bar_lever_money copy 3.png" />
+            <PlistImageFile Name="lobby_v2_Rounded Rectangle 1037 copy.png" Key="lobby_v2_Rounded Rectangle 1037 copy.png" />
+            <PlistImageFile Name="lobby_v2_Rounded Rectangle 1037.png" Key="lobby_v2_Rounded Rectangle 1037.png" />
+            <PlistImageFile Name="lobby_v2_Slot Hoa qua.png" Key="lobby_v2_Slot Hoa qua.png" />
+            <PlistImageFile Name="lobby_v2_Ta la solo.png" Key="lobby_v2_Ta la solo.png" />
+            <PlistImageFile Name="lobby_v2_Tai Xiu.png" Key="lobby_v2_Tai Xiu.png" />
+            <PlistImageFile Name="lobby_v2_Tai-xiu.png" Key="lobby_v2_Tai-xiu.png" />
+            <PlistImageFile Name="lobby_v2_time_tx.png" Key="lobby_v2_time_tx.png" />
+            <PlistImageFile Name="lobby_v2_TLMN solo.png" Key="lobby_v2_TLMN solo.png" />
+            <PlistImageFile Name="lobby_v2_TLMN.png" Key="lobby_v2_TLMN.png" />
+            <PlistImageFile Name="lobby_v2_top_bg_listHu.png" Key="lobby_v2_top_bg_listHu.png" />
+            <PlistImageFile Name="lobby_v2_top_icon-Hoa-Qua.png" Key="lobby_v2_top_icon-Hoa-Qua.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="lobbyv2-2@1x.png" PListFile="lobbyv2-2@1x.plist" Name=".lobbyv2-2@1x_PList.Dir">
+            <PlistImageFile Name="lobby_v2_3Cay.png" Key="lobby_v2_3Cay.png" />
+            <PlistImageFile Name="lobby_v2_Binh.png" Key="lobby_v2_Binh.png" />
+            <PlistImageFile Name="lobby_v2_btn top Hu.png" Key="lobby_v2_btn top Hu.png" />
+            <PlistImageFile Name="lobby_v2_circle_minigame.png" Key="lobby_v2_circle_minigame.png" />
+            <PlistImageFile Name="lobby_v2_icon_gembar copy.png" Key="lobby_v2_icon_gembar copy.png" />
+            <PlistImageFile Name="lobby_v2_Mini game.png" Key="lobby_v2_Mini game.png" />
+            <PlistImageFile Name="lobby_v2_Ta la.png" Key="lobby_v2_Ta la.png" />
+            <PlistImageFile Name="lobby_v2_top_icon-Dien-Hy.png" Key="lobby_v2_top_icon-Dien-Hy.png" />
+            <PlistImageFile Name="lobby_v2_top_icon-Halloween.png" Key="lobby_v2_top_icon-Halloween.png" />
+            <PlistImageFile Name="lobby_v2_top_icon-Tai-Xiu.png" Key="lobby_v2_top_icon-Tai-Xiu.png" />
+          </PlistImageFolder>
+          <Folder Name="login">
+            <Image Name="btn_dang_ky.png" />
+            <Image Name="btn_dang_nhap.png" />
+            <Image Name="btn_face.png" />
+          </Folder>
+          <PlistImageFolder Image="login-1@1x.png" PListFile="login-1@1x.plist" Name=".login-1@1x_PList.Dir">
+            <PlistImageFile Name="Back_icon.png" Key="Back_icon.png" />
+            <PlistImageFile Name="Dangky_icon.png" Key="Dangky_icon.png" />
+            <PlistImageFile Name="Dangnha_green_icon.png" Key="Dangnha_green_icon.png" />
+            <PlistImageFile Name="Facebook_bg_icon.png" Key="Facebook_bg_icon.png" />
+            <PlistImageFile Name="Facebook_icon.png" Key="Facebook_icon.png" />
+            <PlistImageFile Name="forgetpass_phone_icon.png" Key="forgetpass_phone_icon.png" />
+            <PlistImageFile Name="Key_icon.png" Key="Key_icon.png" />
+            <PlistImageFile Name="login_refresh_capcha.png" Key="login_refresh_capcha.png" />
+            <PlistImageFile Name="login_remember_bg.png" Key="login_remember_bg.png" />
+            <PlistImageFile Name="login_remember_check.png" Key="login_remember_check.png" />
+            <PlistImageFile Name="Ma_gioi_thieu.png" Key="Ma_gioi_thieu.png" />
+            <PlistImageFile Name="Man_icon.png" Key="Man_icon.png" />
+            <PlistImageFile Name="White_bar.png" Key="White_bar.png" />
+          </PlistImageFolder>
+          <PlistImageFolder Image="minigame_spin-1@1x.png" PListFile="minigame_spin-1@1x.plist" Name=".minigame_spin-1@1x_PList.Dir">
+            <PlistImageFile Name="Line01.png" Key="Line01.png" />
+            <PlistImageFile Name="vongxoay_ngoai.png" Key="vongxoay_ngoai.png" />
+            <PlistImageFile Name="vongxoay_trongi.png" Key="vongxoay_trongi.png" />
+          </PlistImageFolder>
+          <Folder Name="tx">
+            <Image Name="tx_bg_historydetail.png" />
+            <Image Name="tx_historydetail_close.png" />
+            <Image Name="tx_historydetail_next.png" />
+            <Image Name="tx_historydetail_prev.png" />
+            <Image Name="tx_historydetail_tai.png" />
+            <Image Name="tx_historydetail_xiu.png" />
+          </Folder>
+          <Folder Name="vi">
+            <PlistImageFolder Image="images-localized-1@1x.png" PListFile="images-localized-1@1x.plist" Name=".images-localized-1@1x_PList.Dir">
+              <PlistImageFile Name="chi1.png" Key="chi1.png" />
+              <PlistImageFile Name="chi2.png" Key="chi2.png" />
+              <PlistImageFile Name="game_3_doi_thong.png" Key="game_3_doi_thong.png" />
+              <PlistImageFile Name="game_4_doi_thong.png" Key="game_4_doi_thong.png" />
+              <PlistImageFile Name="game_4_quy.png" Key="game_4_quy.png" />
+              <PlistImageFile Name="game_avar_lose.png" Key="game_avar_lose.png" />
+              <PlistImageFile Name="game_avar_win.png" Key="game_avar_win.png" />
+              <PlistImageFile Name="game_bo_luot.png" Key="game_bo_luot.png" />
+              <PlistImageFile Name="game_cong.png" Key="game_cong.png" />
+              <PlistImageFile Name="game_mb_basanh.png" Key="game_mb_basanh.png" />
+              <PlistImageFile Name="game_mb_bathung.png" Key="game_mb_bathung.png" />
+              <PlistImageFile Name="game_mb_binhlung.png" Key="game_mb_binhlung.png" />
+              <PlistImageFile Name="game_mb_bonsamco.png" Key="game_mb_bonsamco.png" />
+              <PlistImageFile Name="game_mb_culu.png" Key="game_mb_culu.png" />
+              <PlistImageFile Name="game_mb_doi.png" Key="game_mb_doi.png" />
+              <PlistImageFile Name="game_mb_donghoa.png" Key="game_mb_donghoa.png" />
+              <PlistImageFile Name="game_mb_lucphebon.png" Key="game_mb_lucphebon.png" />
+              <PlistImageFile Name="game_mb_mauthau.png" Key="game_mb_mauthau.png" />
+              <PlistImageFile Name="game_mb_namdoimotsam.png" Key="game_mb_namdoimotsam.png" />
+              <PlistImageFile Name="game_mb_rongcuon.png" Key="game_mb_rongcuon.png" />
+              <PlistImageFile Name="game_mb_samco.png" Key="game_mb_samco.png" />
+              <PlistImageFile Name="game_mb_sanh.png" Key="game_mb_sanh.png" />
+              <PlistImageFile Name="game_mb_sanhrong.png" Key="game_mb_sanhrong.png" />
+              <PlistImageFile Name="game_mb_sapho.png" Key="game_mb_sapho.png" />
+              <PlistImageFile Name="game_mb_saplang.png" Key="game_mb_saplang.png" />
+              <PlistImageFile Name="game_mb_thu.png" Key="game_mb_thu.png" />
+              <PlistImageFile Name="game_mb_thung.png" Key="game_mb_thung.png" />
+              <PlistImageFile Name="game_mb_thungphasanh.png" Key="game_mb_thungphasanh.png" />
+              <PlistImageFile Name="game_mb_tuquy.png" Key="game_mb_tuquy.png" />
+              <PlistImageFile Name="game_toi_trang.png" Key="game_toi_trang.png" />
+              <PlistImageFile Name="gameplay_logo_bala.png" Key="gameplay_logo_bala.png" />
+              <PlistImageFile Name="gameplay_logo_ingame.png" Key="gameplay_logo_ingame.png" />
+              <PlistImageFile Name="gameplay_logo_maubinh.png" Key="gameplay_logo_maubinh.png" />
+              <PlistImageFile Name="gameplay_logo_tala.png" Key="gameplay_logo_tala.png" />
+              <PlistImageFile Name="gameplay_logo_TLMN.png" Key="gameplay_logo_TLMN.png" />
+              <PlistImageFile Name="gameplay_text_5doi1sam.png" Key="gameplay_text_5doi1sam.png" />
+              <PlistImageFile Name="gameplay_text_basanh.png" Key="gameplay_text_basanh.png" />
+              <PlistImageFile Name="gameplay_text_bataplang.png" Key="gameplay_text_bataplang.png" />
+              <PlistImageFile Name="gameplay_text_bathung.png" Key="gameplay_text_bathung.png" />
+              <PlistImageFile Name="gameplay_text_bonsamco.png" Key="gameplay_text_bonsamco.png" />
+              <PlistImageFile Name="gameplay_text_culuchi2.png" Key="gameplay_text_culuchi2.png" />
+              <PlistImageFile Name="gameplay_text_donghoa.png" Key="gameplay_text_donghoa.png" />
+              <PlistImageFile Name="gameplay_text_hoa.png" Key="gameplay_text_hoa.png" />
+              <PlistImageFile Name="gameplay_text_lucphebon.png" Key="gameplay_text_lucphebon.png" />
+              <PlistImageFile Name="gameplay_text_mauthau.png" Key="gameplay_text_mauthau.png" />
+              <PlistImageFile Name="gameplay_text_rongcuon.png" Key="gameplay_text_rongcuon.png" />
+              <PlistImageFile Name="gameplay_text_samco.png" Key="gameplay_text_samco.png" />
+              <PlistImageFile Name="gameplay_text_samcochi3.png" Key="gameplay_text_samcochi3.png" />
+              <PlistImageFile Name="gameplay_text_samcochi33.png" Key="gameplay_text_samcochi33.png" />
+              <PlistImageFile Name="gameplay_text_sanhrong.png" Key="gameplay_text_sanhrong.png" />
+              <PlistImageFile Name="gameplay_text_thung.png" Key="gameplay_text_thung.png" />
+              <PlistImageFile Name="gameplay_text_thungphasanh.png" Key="gameplay_text_thungphasanh.png" />
+              <PlistImageFile Name="gameplay_text_thungphasanhchi2.png" Key="gameplay_text_thungphasanhchi2.png" />
+              <PlistImageFile Name="gameplay_text_tuquy.png" Key="gameplay_text_tuquy.png" />
+              <PlistImageFile Name="gameplay_text_tuquychi2.png" Key="gameplay_text_tuquychi2.png" />
+              <PlistImageFile Name="gameplay_text_tuquychi3.png" Key="gameplay_text_tuquychi3.png" />
+              <PlistImageFile Name="lobby_title_01.png" Key="lobby_title_01.png" />
+              <PlistImageFile Name="lobby_title_02.png" Key="lobby_title_02.png" />
+              <PlistImageFile Name="lobby_title_03.png" Key="lobby_title_03.png" />
+              <PlistImageFile Name="nhiemvu_icon_hoanthanh.png" Key="nhiemvu_icon_hoanthanh.png" />
+              <PlistImageFile Name="Quatang_icon_danhan.png" Key="Quatang_icon_danhan.png" />
+              <PlistImageFile Name="slotmachines_jackpot.png" Key="slotmachines_jackpot.png" />
+              <PlistImageFile Name="slotmachines_thang.png" Key="slotmachines_thang.png" />
+              <PlistImageFile Name="taixieu_icon_text_xiu.png" Key="taixieu_icon_text_xiu.png" />
+              <PlistImageFile Name="tala_anchot.png" Key="tala_anchot.png" />
+              <PlistImageFile Name="tala_bichot.png" Key="tala_bichot.png" />
+              <PlistImageFile Name="tala_biden.png" Key="tala_biden.png" />
+              <PlistImageFile Name="tala_tailuot.png" Key="tala_tailuot.png" />
+              <PlistImageFile Name="tala_u.png" Key="tala_u.png" />
+              <PlistImageFile Name="tala_uden.png" Key="tala_uden.png" />
+              <PlistImageFile Name="tala_ukhan.png" Key="tala_ukhan.png" />
+              <PlistImageFile Name="tala_utron.png" Key="tala_utron.png" />
+              <PlistImageFile Name="tala_utronden.png" Key="tala_utronden.png" />
+              <PlistImageFile Name="tala_vongchot.png" Key="tala_vongchot.png" />
+            </PlistImageFolder>
+            <PlistImageFolder Image="images-localized-2@1x.png" PListFile="images-localized-2@1x.plist" Name=".images-localized-2@1x_PList.Dir">
+              <PlistImageFile Name="chi3.png" Key="chi3.png" />
+              <PlistImageFile Name="game_ung.png" Key="game_ung.png" />
+              <PlistImageFile Name="gameplay_ba.png" Key="gameplay_ba.png" />
+              <PlistImageFile Name="gameplay_bet.png" Key="gameplay_bet.png" />
+              <PlistImageFile Name="gameplay_nhat.png" Key="gameplay_nhat.png" />
+              <PlistImageFile Name="gameplay_nhi.png" Key="gameplay_nhi.png" />
+              <PlistImageFile Name="gameplay_text_culu.png" Key="gameplay_text_culu.png" />
+              <PlistImageFile Name="gameplay_text_doi.png" Key="gameplay_text_doi.png" />
+              <PlistImageFile Name="gameplay_text_sanh.png" Key="gameplay_text_sanh.png" />
+              <PlistImageFile Name="gameplay_text_thu.png" Key="gameplay_text_thu.png" />
+              <PlistImageFile Name="taixieu_icon_text_tai.png" Key="taixieu_icon_text_tai.png" />
+              <PlistImageFile Name="tala_mom.png" Key="tala_mom.png" />
+            </PlistImageFolder>
+          </Folder>
+          <Image Name="arrow.png" />
+          <Image Name="assassins_creed_82-wallpaper-480x800.jpg" />
+          <Image Name="assassins_creed_82-wallpaper-800x480.jpg" />
+          <Image Name="avarta_large.png" />
+          <Image Name="background_gameplay_banchoi@1x.png" />
+          <Image Name="background_gameplay_banchoi_xanh@1x.png" />
+          <Image Name="Ball50.png" />
+          <File Name="Ball50.psd" />
+          <Image Name="BallBlue50.png" />
+          <Image Name="BallGreen50.png" />
+          <Image Name="BallPink50.png" />
+          <Image Name="BallRed50.png" />
+          <Image Name="BallYellow50.png" />
+          <Image Name="base_popup@1x.png" />
+          <Image Name="bg_dark.jpg" />
+          <Image Name="bg_dsdl@1x.png" />
+          <Image Name="bg_girls.png" />
+          <Image Name="box_tick.png" />
+          <Image Name="btn_1.png" />
+          <Image Name="btn_2.png" />
+          <Image Name="btn_boluot.png" />
+          <Image Name="btn_boluot2.png" />
+          <Image Name="btn_close.png" />
+          <Image Name="btn_danh.png" />
+          <Image Name="btn_danh2.png" />
+          <Image Name="btn_gianhluot.png" />
+          <Image Name="btn_gianhluot2.png" />
+          <Image Name="btn_tuquay.png" />
+          <Image Name="btn_tuquay2.png" />
+          <Image Name="button_popup_dongy_hoverl@1x.png" />
+          <Image Name="button_popup_dongy_normal@1x.png" />
+          <Image Name="Canon100.png" />
+          <Image Name="castfrendzy.png" />
+          <Image Name="check.png" />
+          <Image Name="chest.png" />
+          <Image Name="frame_chest.png" />
+          <Image Name="frame_number.png" />
+          <Image Name="frame_slot.png" />
+          <Image Name="frame_slotmini.png" />
+          <Image Name="gameplay_icon_thoat@1x.png" />
+          <Image Name="huong-dan-choi-tuong-trieu-van-trong-lien-quan-mobile-768x432.jpg" />
+          <Image Name="huong-dan-choi-tuong-yorn-trong-lien-quan-mobile-v2-768x480.jpg" />
+          <Image Name="item_01.png" />
+          <Image Name="item_02.png" />
+          <Image Name="item_03.png" />
+          <Image Name="item_04.png" />
+          <Image Name="item_05.png" />
+          <Image Name="item_06.png" />
+          <Image Name="line.png" />
+          <Image Name="loadding_1.png" />
+          <Image Name="loadding_2.png" />
+          <Image Name="lobby_background_den_mo@1x.png" />
+          <Image Name="lobby_bg@1x.png" />
+          <Image Name="logo_final@1x.png" />
+          <Image Name="Main_icon_do.png" />
+          <Image Name="ms_windows-wallpaper-480x800.jpg" />
+          <Image Name="ms_windows-wallpaper-800x480.jpg" />
+          <Image Name="p_star_y.png" />
+          <Image Name="programming-wallpaper-480x800.jpg" />
+          <Image Name="programming-wallpaper-800x480.jpg" />
+          <Image Name="quatang_popup_iconthoat_hover@1x.png" />
+          <Image Name="quatang_popup_iconthoat_nomal@1x.png" />
+          <Image Name="quatang_popup_item_nhanthanhcong@1x.png" />
+          <Image Name="slot_icon_bg@1x.png" />
+          <Image Name="Slot_popup_bg@1x.png" />
+          <Image Name="slot2_bg@1x.png" />
+          <Image Name="slot2_popup@1x.png" />
+          <Image Name="slot3_bg@1x.png" />
+          <Image Name="slotmini.jpg" />
+          <Image Name="spinner.png" />
+          <Image Name="splash.3978d.jpg" />
+          <File Name="splash_gsmobile.webp" />
+          <Image Name="stick.png" />
+          <Image Name="stick_ball.png" />
+          <Image Name="stick_base.png" />
+          <Image Name="Tai_xiu_win@1x.png" />
+          <Image Name="tittle_slotmini.png" />
+          <Image Name="txt_quaynhanh.png" />
+          <Image Name="txt_tuquay.png" />
+          <Image Name="Vip_lever@1x.png" />
+          <Image Name="Vip_lever_2@1x.png" />
+        </Folder>
+        <Folder Name="particle">
+          <Image Name="circle.png" />
+          <PlistParticleFile Name="gift_received.plist" />
+          <PlistParticleFile Name="particle_background.plist" />
+          <PlistParticleFile Name="particle_dailygift.plist" />
+          <PlistParticleFile Name="particle_dailygift2.plist" />
+          <PlistParticleFile Name="particle_glow.plist" />
+          <PlistParticleFile Name="particle_glow_line.plist" />
+          <PlistParticleFile Name="particle_taixiu.plist" />
+          <PlistParticleFile Name="particle_taixiu2.plist" />
+          <PlistParticleFile Name="particle_tala.plist" />
+          <Image Name="rectangle.png" />
+          <PlistParticleFile Name="star-effect.plist" />
+          <PlistParticleFile Name="star-effect-small.plist" />
+        </Folder>
+        <Folder Name="plist">
+          <PlistParticleFile Name="haphom.plist" />
+          <PlistParticleFile Name="particle_texture.plist" />
+        </Folder>
+        <Folder Name="sounds">
+          <Audio Name="BGM_InGame_1.mp3" />
+          <Audio Name="BGM_Loading_1.mp3" />
+          <Audio Name="BGM_Lobby_1.mp3" />
+          <Audio Name="BGM_Lobby_2.mp3" />
+          <Audio Name="BGM_Main_1.mp3" />
+          <Audio Name="BGM_Main_2.mp3" />
+          <Audio Name="BGM_SlotMachine.mp3" />
+          <Audio Name="DienHy_SlotWin.mp3" />
+          <Audio Name="DienHy_Spinning.mp3" />
+          <Audio Name="DienHy_StopSpinning.mp3" />
+          <Audio Name="Halloween_SlotWin.mp3" />
+          <Audio Name="Halloween_Spinning.mp3" />
+          <Audio Name="Halloween_StopSpinning.mp3" />
+          <Audio Name="SE_AbsoluteWin.mp3" />
+          <Audio Name="SE_ArrangeDone.mp3" />
+          <Audio Name="SE_ButtonAction.mp3" />
+          <Audio Name="SE_BuyCoin.mp3" />
+          <Audio Name="SE_CardDeal_1.mp3" />
+          <Audio Name="SE_CardDeal_2.mp3" />
+          <Audio Name="SE_CardDeal_3.mp3" />
+          <Audio Name="SE_CardDeal_4.mp3" />
+          <Audio Name="SE_CardDeal_5.mp3" />
+          <Audio Name="SE_CardUp.mp3" />
+          <Audio Name="SE_ChatBubble.mp3" />
+          <Audio Name="SE_ChatEmoticon.mp3" />
+          <Audio Name="SE_Checked.mp3" />
+          <Audio Name="SE_CollectCoins.mp3" />
+          <Audio Name="SE_CompareCardList.mp3" />
+          <Audio Name="SE_CountDown.mp3" />
+          <Audio Name="SE_CutCardEff.mp3" />
+          <Audio Name="SE_DealingCards.mp3" />
+          <Audio Name="SE_DiceRoll.mp3" />
+          <Audio Name="SE_EnterLobby.mp3" />
+          <Audio Name="SE_Failed.mp3" />
+          <Audio Name="SE_GameLose.mp3" />
+          <Audio Name="SE_GameMSGBalloon.mp3" />
+          <Audio Name="SE_GameWin.mp3" />
+          <Audio Name="SE_GetGemReward.mp3" />
+          <Audio Name="SE_GetScreenShot.mp3" />
+          <Audio Name="SE_JackPot.mp3" />
+          <Audio Name="SE_JoinRoom.mp3" />
+          <Audio Name="SE_LeaveRoom.mp3" />
+          <Audio Name="SE_MailClose.mp3" />
+          <Audio Name="SE_MailOpen.mp3" />
+          <Audio Name="SE_MoneyJackpot.mp3" />
+          <Audio Name="SE_MyTurn.mp3" />
+          <Audio Name="SE_PopupClose.mp3" />
+          <Audio Name="SE_PopupOpen.mp3" />
+          <Audio Name="SE_RearrangeCards.mp3" />
+          <Audio Name="SE_Scroll.mp3" />
+          <Audio Name="SE_ShowSpecialListCards.mp3" />
+          <Audio Name="SE_SlotWin.mp3" />
+          <Audio Name="SE_Spinning.mp3" />
+          <Audio Name="SE_StopSpinning.mp3" />
+          <Audio Name="SE_SwapCards.mp3" />
+          <Audio Name="SE_SwitchCard.mp3" />
+          <Audio Name="SE_SwitchMenuItem.mp3" />
+          <Audio Name="SE_Unlock.mp3" />
+          <Audio Name="SE_WinClapHands.mp3" />
+          <Audio Name="SE_WinCoin.mp3" />
+        </Folder>
+        <Project Name="SceneGame.csd" Type="Scene" />
+        <Project Name="ScreenSlotTester.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
