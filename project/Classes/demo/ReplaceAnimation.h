@@ -1,5 +1,7 @@
 #include "BaseDemo.h"
+#include "cocos2d.h"
 
+using namespace cocos2d;
 class ReplaceAnimation : BaseDemo
 {
 public:
@@ -52,9 +54,18 @@ protected:
         getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
         //
         createText("Touch to change animation.");
+        
+        auto touchListener = EventListenerTouchOneByOne::create();
+        touchListener->onTouchBegan = CC_CALLBACK_2(ReplaceAnimation::onTouchBegan, this);
+        _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     }
 
 private:
+    bool onTouchBegan(Touch* touch, Event* event)
+    {
+        _changeAnimation();
+        return true;
+    }
     void _mouseDownHandler(cocos2d::EventMouse* event)
     {
         _changeAnimation();

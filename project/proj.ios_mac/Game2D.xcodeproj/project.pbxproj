@@ -45,6 +45,7 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		BF88BD2A2241EB0100C7DBDE /* GameScrollingScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF88BD292241EB0100C7DBDE /* GameScrollingScreen.cpp */; };
 		BF8E937C2230D1D40072A7C3 /* SlotTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E93742230D1D40072A7C3 /* SlotTester.cpp */; };
 		BF8E937D2230D1D40072A7C3 /* Popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E93752230D1D40072A7C3 /* Popup.cpp */; };
 		BF8E937E2230D1D40072A7C3 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E93762230D1D40072A7C3 /* HelloWorldScene.cpp */; };
@@ -172,6 +173,8 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF88BD272241EB0100C7DBDE /* GameScrollingScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScrollingScreen.h; sourceTree = "<group>"; };
+		BF88BD292241EB0100C7DBDE /* GameScrollingScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScrollingScreen.cpp; sourceTree = "<group>"; };
 		BF8E93722230D1D40072A7C3 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		BF8E93732230D1D40072A7C3 /* HelloWorldScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldScene.h; sourceTree = "<group>"; };
 		BF8E93742230D1D40072A7C3 /* SlotTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SlotTester.cpp; sourceTree = "<group>"; };
@@ -455,6 +458,8 @@
 		BF8E93712230D1D40072A7C3 /* game */ = {
 			isa = PBXGroup;
 			children = (
+				BF88BD292241EB0100C7DBDE /* GameScrollingScreen.cpp */,
+				BF88BD272241EB0100C7DBDE /* GameScrollingScreen.h */,
 				BF8E93722230D1D40072A7C3 /* GameScene.h */,
 				BF8E93742230D1D40072A7C3 /* SlotTester.cpp */,
 				BF8E93752230D1D40072A7C3 /* Popup.cpp */,
@@ -815,6 +820,7 @@
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				BFEC5E98222FB63900853A75 /* BaseTimelineState.cpp in Sources */,
 				BFEC5E95222FB63900853A75 /* TransformObject.cpp in Sources */,
+				BF88BD2A2241EB0100C7DBDE /* GameScrollingScreen.cpp in Sources */,
 				BFEC5EA0222FB63900853A75 /* DragonBonesData.cpp in Sources */,
 				BFEC5E94222FB63900853A75 /* Slot.cpp in Sources */,
 				BFEC5E9A222FB63900853A75 /* AnimationState.cpp in Sources */,

@@ -39,9 +39,18 @@ protected:
         getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
         //
         createText("Touch to play animation.");
+        
+        auto touchListener = EventListenerTouchOneByOne::create();
+        touchListener->onTouchBegan = CC_CALLBACK_2(DragonBonesEvent::onTouchBegan, this);
+        _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
     }
 
 private:
+    bool onTouchBegan(Touch* touch, Event* event)
+    {
+        _armatureDisplay->getAnimation()->fadeIn("skill_03", 0.2f);
+        return true;
+    }
     void _mouseDownHandler(cocos2d::EventMouse* event)
     {
         _armatureDisplay->getAnimation()->fadeIn("skill_03", 0.2f);

@@ -12,10 +12,11 @@
 #include "demo/ReplaceAnimation.h"
 #include "demo/CoreElement.h"
 #include "demo/PerformanceTest.h"
+#include "game/GameScrollingScreen.h"
 // #include "DragonBonesTest.h"
 
 USING_NS_CC;
-
+static cocos2d::Size designResolutionSize = cocos2d::Size(480, 800);
 AppDelegate::AppDelegate() 
 {
 }
@@ -40,11 +41,15 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("DragonBones", cocos2d::Rect(0, 0, 1136, 640));
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
+        glview = GLViewImpl::createWithRect("Game2D", cocos2d::Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
+#else
+        glview = GLViewImpl::create("Game2D");
+#endif
         director->setOpenGLView(glview);
     }
 
-    director->getOpenGLView()->setDesignResolutionSize(1136, 640, ResolutionPolicy::SHOW_ALL);
+    glview->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, ResolutionPolicy::NO_BORDER);
 
     // turn on display FPS
     director->setDisplayStats(true);
@@ -55,7 +60,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    auto scene = HelloDragonBones::createScene();
+    auto scene = GameScrollingScreen::createScene();
     // auto scene = AnimationBase::createScene();
     // auto scene = DragonBonesEvent::createScene();
     // auto scene = AnimationLayer::createScene();
@@ -67,10 +72,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     // auto scene = ReplaceAnimation::createScene();
     // auto scene = CoreElementGame::createScene();
     // auto scene = PerformanceTest::createScene();
-
     // auto scene = DragonBonesTest::createScene();
-
-    // run
     director->runWithScene(scene);
 
     return true;

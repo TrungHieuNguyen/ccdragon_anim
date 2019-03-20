@@ -28,14 +28,5 @@
         <LastRunType Value="Mac" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="ScreenSlotTester.csd" />
-          <FilePathData Path="SceneGame.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="ScreenSlotTester.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

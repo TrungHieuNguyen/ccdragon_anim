@@ -30,6 +30,65 @@
           <TTF Name="sf-ui-text-bold.ttf" />
         </Folder>
         <Folder Name="images">
+          <Folder Name="card_main">
+            <Folder Name="homescreen">
+              <Image Name="arrow_left.png" />
+              <Image Name="arrow_right.png" />
+              <Image Name="bg_red.png" />
+              <Image Name="btn_gift.png" />
+              <Image Name="btn_gift2.png" />
+              <Image Name="btn_home.png" />
+              <Image Name="btn_home2.png" />
+              <Image Name="btn_mission2.png" />
+              <Image Name="circle_notice.png" />
+              <Image Name="fill_process.png" />
+              <Image Name="frame_avatar.png" />
+              <Image Name="frame_avatar2.png" />
+              <Image Name="frame_money.png" />
+              <Image Name="frame_process.png" />
+              <Image Name="frame_recent.png" />
+              <Image Name="Home720.jpg" />
+              <Image Name="icon_chip.png" />
+              <Image Name="icon_diamond.png" />
+              <Image Name="icon_friend.png" />
+              <Image Name="icon_friend2.png" />
+              <Image Name="icon_gift.png" />
+              <Image Name="icon_mail.png" />
+              <Image Name="icon_mail2.png" />
+              <Image Name="icon_news.png" />
+              <Image Name="icon_news2.png" />
+              <Image Name="icon_plus.png" />
+              <Image Name="icon_plus2.png" />
+              <Image Name="icon_prizewheel.png" />
+              <Image Name="icon_setting.png" />
+              <Image Name="icon_setting2.png" />
+              <Image Name="icon_top.png" />
+              <Image Name="icon_top2.png" />
+              <Image Name="iconbar.png" />
+              <Image Name="tab_slot.png" />
+              <Image Name="tab_slot2.png" />
+              <Image Name="txt_giftcollect.png" />
+              <Image Name="txt_prizewheel.png" />
+            </Folder>
+            <Folder Name="icongames">
+              <Image Name="icon_baccarat.png" />
+              <Image Name="icon_baccarat2.png" />
+              <Image Name="icon_blackjack.png" />
+              <Image Name="icon_blackjack2.png" />
+              <Image Name="keno.png" />
+              <Image Name="keno2.png" />
+              <Image Name="numbergame.png" />
+              <Image Name="numbergame2.png" />
+              <Image Name="poker.png" />
+              <Image Name="poker2.png" />
+              <Image Name="slotdaoca.png" />
+              <Image Name="slotdaoca2.png" />
+              <Image Name="slotlongtu.png" />
+              <Image Name="slotlongtu2.png" />
+              <Image Name="taixiu.png" />
+              <Image Name="taixiu2.png" />
+            </Folder>
+          </Folder>
           <PlistImageFolder Image="chat_emo-@1x.png" PListFile="chat_emo-@1x.plist" Name=".chat_emo-@1x_PList.Dir">
             <PlistImageFile Name="adore.png" Key="adore.png" />
             <PlistImageFile Name="after_boom.png" Key="after_boom.png" />
@@ -899,6 +958,23 @@
             <PlistImageFile Name="vongxoay_ngoai.png" Key="vongxoay_ngoai.png" />
             <PlistImageFile Name="vongxoay_trongi.png" Key="vongxoay_trongi.png" />
           </PlistImageFolder>
+          <Folder Name="parallax">
+            <Image Name="layer_01_2048 x 1546.png" />
+            <Image Name="layer_02_1920 x 1080.png" />
+            <Image Name="layer_02_2048 x 1546.png" />
+            <Image Name="layer_03_1920 x 1080.png" />
+            <Image Name="layer_03_2048 x 1546.png" />
+            <Image Name="layer_04_1920 x 1080.png" />
+            <Image Name="layer_04_2048 x 1546.png" />
+            <Image Name="layer_05_1920 x 1080.png" />
+            <Image Name="layer_05_2048 x 1546.png" />
+            <Image Name="layer_06_1920 x 1080.png" />
+            <Image Name="layer_06_2048 x 1546.png" />
+            <Image Name="layer_07_1920 x 1080.png" />
+            <Image Name="layer_07_2048 x 1546.png" />
+            <Image Name="layer_08_1920 x 1080.png" />
+            <Image Name="layer_08_2048 x 1546.png" />
+          </Folder>
           <Folder Name="tx">
             <Image Name="tx_bg_historydetail.png" />
             <Image Name="tx_historydetail_close.png" />
@@ -1164,6 +1240,7 @@
         </Folder>
         <Project Name="SceneGame.csd" Type="Scene" />
         <Project Name="ScreenSlotTester.csd" Type="Scene" />
+        <Project Name="ScrollScreen.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 #include "../dragonBones/cocos2dx/CCDragonBonesHeaders.h"
+
+using namespace cocos2d;
 class BaseDemo : public cocos2d::LayerColor
 {
 protected:
