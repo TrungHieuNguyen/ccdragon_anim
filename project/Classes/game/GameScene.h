@@ -30,19 +30,13 @@
 #include <vector>
 #include <string>
 #include "cocos2d.h"
-
+#include "GameAbstract.h"
 using namespace cocos2d;
 using namespace cocos2d::ui;
 using namespace cocos2d::extension;
 using namespace std;
 
-enum GameState
-{
-    GAME_RESET,
-    GAME_START,
-    GAME_UPDATE,
-    GAME_OVER,
-};
+
 
 typedef struct ItemsStruct
 {
@@ -60,7 +54,7 @@ typedef struct ItemsStruct
 } ItemsStruct;
 
 
-class GameScene : public cocos2d::Scene
+class GameScene : public GameAbstract
 {
     Node* mainLayer;
     int spinSpeed;

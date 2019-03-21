@@ -21,8 +21,9 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ****************************************************************************/
+#ifndef GameState_hpp
+#define GameState_hpp
 
-#pragma one
 #include "ui/CocosGUI.h"
 #include "cocos-ext.h"
 #include <vector>
@@ -34,38 +35,37 @@ using namespace cocos2d::ui;
 using namespace cocos2d::extension;
 using namespace std;
 
-class GameScrollingScreen : public cocos2d::Scene
+enum GameState
 {
-    Node* mainLayer;
-    int spinSpeed;
-    int spinWheel1Counter;
-    bool isRun;
-    int spinCounter;
-    Node* _nodeTrees;
-    Node* _nodeBuilding01;
-    Node* _nodeBuilding02;
-    Node* _nodeBuilding03;
+    GAME_RESET,
+    GAME_START,
+    GAME_UPDATE,
+    GAME_OVER,
+};
+
+class GameAbstract : public cocos2d::Scene
+{
 public:
+    Node* mainLayer;
+    Node* menuTop;
+    Node* menuBot;
+    bool isRun;
+    bool isPlaying;
     static cocos2d::Scene* createScene();
     virtual bool init();
     void menuCloseCallback(cocos2d::Ref* pSender);
-    CREATE_FUNC(GameScrollingScreen);
+    CREATE_FUNC(GameAbstract);
     int tickCounter;
     int stateGame;
     void timeTick(float dt);
-    void resetGame();
-    void startGame();
-    void updateGame();
-    void update(float) override;
+    virtual void resetGame();
+    virtual void startGame();
+    virtual void stopGame();
+    virtual void update(float) override;
     void updateGameState(int state);
-    void spinColumn(float dt);
-    void onStartSlot(float);
-    
-private:
-    virtual bool onTouchBegan(cocos2d::Touch*, cocos2d::Event*);
-    virtual void onTouchEnded(cocos2d::Touch*, cocos2d::Event*);
-    virtual void onTouchMoved(cocos2d::Touch*, cocos2d::Event*);
-    virtual void onTouchCancelled(cocos2d::Touch*, cocos2d::Event*);
+    virtual void updateGame(float dt);
+    void showTopMenu();
+    void showBotMenu();
+
 };
-
-
+#endif

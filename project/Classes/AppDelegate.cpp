@@ -13,6 +13,8 @@
 #include "demo/CoreElement.h"
 #include "demo/PerformanceTest.h"
 #include "game/GameScrollingScreen.h"
+#include "game/GameScene.h"
+#include "game/BingoScreen.hpp"
 // #include "DragonBonesTest.h"
 
 USING_NS_CC;
@@ -60,7 +62,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    auto scene = GameScrollingScreen::createScene();
+    auto scene = BingoScreen::createScene();
     // auto scene = AnimationBase::createScene();
     // auto scene = DragonBonesEvent::createScene();
     // auto scene = AnimationLayer::createScene();

@@ -1241,6 +1241,7 @@
         <Project Name="SceneGame.csd" Type="Scene" />
         <Project Name="ScreenSlotTester.csd" Type="Scene" />
         <Project Name="ScrollScreen.csd" Type="Scene" />
+        <Project Name="ScreenBingo.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

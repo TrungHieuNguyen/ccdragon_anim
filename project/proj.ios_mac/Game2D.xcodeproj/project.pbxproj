@@ -45,6 +45,8 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		BF7C31B7224346F500785967 /* GameAbstract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7C31B5224346F500785967 /* GameAbstract.cpp */; };
+		BF7C31BA22434C9100785967 /* BingoScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF7C31B922434C9100785967 /* BingoScreen.cpp */; };
 		BF88BD2A2241EB0100C7DBDE /* GameScrollingScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF88BD292241EB0100C7DBDE /* GameScrollingScreen.cpp */; };
 		BF8E937C2230D1D40072A7C3 /* SlotTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E93742230D1D40072A7C3 /* SlotTester.cpp */; };
 		BF8E937D2230D1D40072A7C3 /* Popup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E93752230D1D40072A7C3 /* Popup.cpp */; };
@@ -173,6 +175,10 @@
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF7C31B5224346F500785967 /* GameAbstract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameAbstract.cpp; sourceTree = "<group>"; };
+		BF7C31B6224346F500785967 /* GameAbstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAbstract.h; sourceTree = "<group>"; };
+		BF7C31B822434C9000785967 /* BingoScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BingoScreen.hpp; sourceTree = "<group>"; };
+		BF7C31B922434C9100785967 /* BingoScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BingoScreen.cpp; sourceTree = "<group>"; };
 		BF88BD272241EB0100C7DBDE /* GameScrollingScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScrollingScreen.h; sourceTree = "<group>"; };
 		BF88BD292241EB0100C7DBDE /* GameScrollingScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScrollingScreen.cpp; sourceTree = "<group>"; };
 		BF8E93722230D1D40072A7C3 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
@@ -458,18 +464,22 @@
 		BF8E93712230D1D40072A7C3 /* game */ = {
 			isa = PBXGroup;
 			children = (
-				BF88BD292241EB0100C7DBDE /* GameScrollingScreen.cpp */,
+				BF7C31B922434C9100785967 /* BingoScreen.cpp */,
+				BF7C31B822434C9000785967 /* BingoScreen.hpp */,
 				BF88BD272241EB0100C7DBDE /* GameScrollingScreen.h */,
-				BF8E93722230D1D40072A7C3 /* GameScene.h */,
-				BF8E93742230D1D40072A7C3 /* SlotTester.cpp */,
-				BF8E93752230D1D40072A7C3 /* Popup.cpp */,
+				BF88BD292241EB0100C7DBDE /* GameScrollingScreen.cpp */,
 				BF8E93732230D1D40072A7C3 /* HelloWorldScene.h */,
 				BF8E93762230D1D40072A7C3 /* HelloWorldScene.cpp */,
-				BF8E93772230D1D40072A7C3 /* PopupResult.cpp */,
 				BF8E93782230D1D40072A7C3 /* Popup.hpp */,
+				BF8E93752230D1D40072A7C3 /* Popup.cpp */,
 				BF8E93792230D1D40072A7C3 /* PopupResult.hpp */,
+				BF8E93772230D1D40072A7C3 /* PopupResult.cpp */,
+				BF8E93722230D1D40072A7C3 /* GameScene.h */,
 				BF8E937A2230D1D40072A7C3 /* GameScene.cpp */,
 				BF8E937B2230D1D40072A7C3 /* SlotTester.hpp */,
+				BF8E93742230D1D40072A7C3 /* SlotTester.cpp */,
+				BF7C31B5224346F500785967 /* GameAbstract.cpp */,
+				BF7C31B6224346F500785967 /* GameAbstract.h */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -801,6 +811,7 @@
 				BFEC5EA8222FB63900853A75 /* ArmatureData.cpp in Sources */,
 				BFEC5EA9222FB63900853A75 /* UserData.cpp in Sources */,
 				BFEC5EA6222FB63900853A75 /* AnimationData.cpp in Sources */,
+				BF7C31B7224346F500785967 /* GameAbstract.cpp in Sources */,
 				BF8E937F2230D1D40072A7C3 /* PopupResult.cpp in Sources */,
 				BF8E937D2230D1D40072A7C3 /* Popup.cpp in Sources */,
 				BFEC5E8F222FB63900853A75 /* DragonBones.cpp in Sources */,
@@ -829,6 +840,7 @@
 				BFEC5EA4222FB63900853A75 /* AnimationConfig.cpp in Sources */,
 				BF8E937C2230D1D40072A7C3 /* SlotTester.cpp in Sources */,
 				BFEC5E8E222FB63900853A75 /* BaseObject.cpp in Sources */,
+				BF7C31BA22434C9100785967 /* BingoScreen.cpp in Sources */,
 				BFEC5E99222FB63900853A75 /* Animation.cpp in Sources */,
 				BFEC5EAB222FB63900853A75 /* EventObject.cpp in Sources */,
 				BFEC5E90222FB63900853A75 /* Bone.cpp in Sources */,

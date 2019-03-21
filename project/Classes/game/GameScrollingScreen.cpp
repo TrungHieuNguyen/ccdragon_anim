@@ -110,49 +110,36 @@ void GameScrollingScreen::updateGame()
     auto label2 = mainLayer->getChildByName<Label*>("txtState");
     string msg = StringUtils::format("State:%d",stateGame);
     label2->setString(msg.c_str());
-    
-    switch (stateGame) {
-        case GAME_RESET:
-            break;
-        case GAME_START:
-            break;
-        case GAME_UPDATE:
-            break;
-        case GAME_OVER:
-            break;
-        default:
-            break;
-    }
 }
 void GameScrollingScreen::updateGameState(int tick)
 {
     //log("updateGameState::state %d",tick);
-    if(tick==0)
-    {
-        stateGame = GAME_RESET;
-    }
-    else if(tick==1)
-    {
-         stateGame = GAME_START;
-    }else if(tick==3)
-    {
-        stateGame = GAME_UPDATE;
-    }else if(tick==30)
-    {
-        stateGame = GAME_OVER;
-    }
-    else if(tick==34)
-    {
-        stateGame = GAME_RESET;
-        tickCounter=-1;
-    }
-    auto label2 = mainLayer->getChildByName<Label*>("txtState");
-    string msg = StringUtils::format("State:%d",stateGame);
-    label2->setString(msg.c_str());
-    
-    auto label3 = mainLayer->getChildByName<Label*>("txtClock");
-    msg = StringUtils::format("Speed:%d",spinSpeed);
-    label3->setString(msg.c_str());
+//    if(tick==0)
+//    {
+//        stateGame = GAME_RESET;
+//    }
+//    else if(tick==1)
+//    {
+//         stateGame = GAME_START;
+//    }else if(tick==3)
+//    {
+//        stateGame = GAME_UPDATE;
+//    }else if(tick==30)
+//    {
+//        stateGame = GAME_OVER;
+//    }
+//    else if(tick==34)
+//    {
+//        stateGame = GAME_RESET;
+//        tickCounter=-1;
+//    }
+//    auto label2 = mainLayer->getChildByName<Label*>("txtState");
+//    string msg = StringUtils::format("State:%d",stateGame);
+//    label2->setString(msg.c_str());
+//    
+//    auto label3 = mainLayer->getChildByName<Label*>("txtClock");
+//    msg = StringUtils::format("Speed:%d",spinSpeed);
+//    label3->setString(msg.c_str());
 
     
 }
@@ -294,10 +281,10 @@ void GameScrollingScreen::onTouchEnded(Touch* touch, Event* event)
 void GameScrollingScreen::onTouchMoved(Touch* touch, Event* event)
 {
     cocos2d::log("touch moved delta(%d,%d)",touch->getDelta().x,touch->getDelta().y);
-    _nodeTrees->setPositionX(_nodeTrees->getPositionX()+ (1.5*touch->getDelta().x));
+    _nodeTrees->setPositionX(_nodeTrees->getPositionX()+ (1.3*touch->getDelta().x));
     _nodeBuilding01->setPositionX(_nodeBuilding01->getPositionX()+touch->getDelta().x);
-    _nodeBuilding02->setPositionX(_nodeBuilding02->getPositionX()+ (0.5*touch->getDelta().x));
-    _nodeBuilding03->setPositionX(_nodeBuilding02->getPositionX()+ (0.1*touch->getDelta().x));
+    _nodeBuilding02->setPositionX(_nodeBuilding02->getPositionX()+ (0.3*touch->getDelta().x));
+    _nodeBuilding03->setPositionX(_nodeBuilding03->getPositionX()+ (0.1*touch->getDelta().x));
 }
 
 void GameScrollingScreen::onTouchCancelled(Touch* touch, Event* event)

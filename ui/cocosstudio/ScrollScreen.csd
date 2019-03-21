@@ -28,7 +28,7 @@
             <FileData Type="Normal" Path="images/parallax/layer_07_1920 x 1080.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="building_01" ActionTag="-1855885239" Tag="121" IconVisible="False" LeftMargin="-499.8914" RightMargin="-940.1086" TopMargin="-236.3699" BottomMargin="-43.6301" ctype="SpriteObjectData">
+          <AbstractNodeData Name="building_01" Visible="False" ActionTag="-1855885239" Tag="121" IconVisible="False" LeftMargin="-499.8914" RightMargin="-940.1086" TopMargin="-236.3699" BottomMargin="-43.6301" ctype="SpriteObjectData">
             <Size X="1920.0000" Y="1080.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="460.1086" Y="496.3699" />
