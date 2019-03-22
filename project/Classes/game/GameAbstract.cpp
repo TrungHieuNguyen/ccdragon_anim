@@ -157,12 +157,12 @@ void GameAbstract::showTopMenu()
     {
         auto move = MoveBy::create(0.5f,Vec2(0, 100));
         auto move_back = move->reverse();
-        //        auto move_ease_inout = EaseBounceInOut::create(move->clone());
-        //        auto move_ease_inout2 = EaseBounceOut::create(move_back->clone());
-        //        auto move_ease_inout = EaseIn::create(move->clone(),0.3);
-        //        auto move_ease_inout2 = EaseIn::create(move_back->clone(),0.3);
-        //        auto move_ease_inout = EaseOut::create(move->clone(),0.3);
-        //        auto move_ease_inout2 = EaseOut::create(move_back->clone(),0.3);
+//        auto move_ease_inout = EaseBounceInOut::create(move->clone());
+//        auto move_ease_inout2 = EaseBounceOut::create(move_back->clone());
+//        auto move_ease_inout = EaseIn::create(move->clone(),0.3);
+//        auto move_ease_inout2 = EaseIn::create(move_back->clone(),0.3);
+//        auto move_ease_inout = EaseOut::create(move->clone(),0.3);
+//        auto move_ease_inout2 = EaseOut::create(move_back->clone(),0.3);
         auto move_ease_inout = EaseExponentialOut::create(move->clone());
         auto move_ease_inout2 = EaseExponentialOut::create(move_back->clone());
         menuTop->runAction(move_ease_inout2->clone());
