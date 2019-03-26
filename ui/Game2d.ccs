@@ -89,6 +89,14 @@
               <Image Name="taixiu2.png" />
             </Folder>
           </Folder>
+          <Folder Name="characters">
+            <Image Name="circle01.png" />
+            <Image Name="circle128.png" />
+            <Image Name="circle72.png" />
+            <Image Name="MainCharacter.png" />
+            <Image Name="rect128.png" />
+            <Image Name="rect96.png" />
+          </Folder>
           <PlistImageFolder Image="chat_emo-@1x.png" PListFile="chat_emo-@1x.plist" Name=".chat_emo-@1x_PList.Dir">
             <PlistImageFile Name="adore.png" Key="adore.png" />
             <PlistImageFile Name="after_boom.png" Key="after_boom.png" />
@@ -1156,6 +1164,10 @@
           <Image Name="txt_tuquay.png" />
           <Image Name="Vip_lever@1x.png" />
           <Image Name="Vip_lever_2@1x.png" />
+          <Folder Name="background">
+            <Image Name="light_background-wallpaper-480x800.jpg" />
+            <Image Name="light_background-wallpaper-800x480.jpg" />
+          </Folder>
         </Folder>
         <Folder Name="particle">
           <Image Name="circle.png" />
@@ -1239,9 +1251,9 @@
           <Audio Name="SE_WinCoin.mp3" />
         </Folder>
         <Project Name="SceneGame.csd" Type="Scene" />
+        <Project Name="ScreenBingo.csd" Type="Scene" />
         <Project Name="ScreenSlotTester.csd" Type="Scene" />
         <Project Name="ScrollScreen.csd" Type="Scene" />
-        <Project Name="ScreenBingo.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

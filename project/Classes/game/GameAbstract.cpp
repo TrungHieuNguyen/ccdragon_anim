@@ -152,7 +152,11 @@ void GameAbstract::update(float delta)
 void GameAbstract::showTopMenu()
 {
     if(mainLayer)
+    {
         menuTop = mainLayer->getChildByName("pnlInfo");
+        menuTop->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+        menuTop->setPositionX(getContentSize().width/2);
+    }
     if(menuTop)
     {
         auto move = MoveBy::create(0.5f,Vec2(0, 100));
@@ -172,17 +176,16 @@ void GameAbstract::showTopMenu()
 void GameAbstract::showBotMenu()
 {
     if(mainLayer)
+    {
         menuBot= mainLayer->getChildByName("pnlControler");
+        menuTop->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
+        menuTop->setPositionX(getContentSize().width/2);
+    }
+    
     if(menuBot)
     {
         auto move = MoveBy::create(0.5f,Vec2(0, +150));
         auto move_back = move->reverse();
-        //        auto move_ease_inout = EaseBounceInOut::create(move->clone());
-        //        auto move_ease_inout2 = EaseBounceOut::create(move_back->clone());
-        //        auto move_ease_inout = EaseIn::create(move->clone(),0.3);
-        //        auto move_ease_inout2 = EaseIn::create(move_back->clone(),0.3);
-        //        auto move_ease_inout = EaseOut::create(move->clone(),0.3);
-        //        auto move_ease_inout2 = EaseOut::create(move_back->clone(),0.3);
         auto move_ease_inout = EaseExponentialOut::create(move->clone());
         auto move_ease_inout2 = EaseExponentialOut::create(move->clone());
         menuBot->runAction(move_ease_inout2->clone());

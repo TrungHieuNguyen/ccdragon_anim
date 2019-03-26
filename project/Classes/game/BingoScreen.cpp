@@ -68,32 +68,29 @@ bool BingoScreen::init()
     Scale9Sprite * img = Scale9Sprite::create("images/btn_tuquay.png");
     img->addChild(batch, 10);
     
-    Sprite * imghighlight = Sprite::create("images/card_main/homescreen/frame_recent.png");
-    //img->addChild(imghighlight, 10);
-  
-    auto stencil = Scale9Sprite::create("images/btn_tuquay.png");
-    ClippingNode *clipping = ClippingNode::create();
-    clipping->setAlphaThreshold(0.1f);
-    clipping->setContentSize(stencil->getContentSize());
-    clipping->addChild(imghighlight);
-    clipping->setPosition(100,100);
-    clipping->setStencil(stencil);
-    
-    
-    auto moveLeft = MoveBy::create(0.5f,Vec2(+250, 0));
-    auto moveRight = MoveBy::create(0.0f,Vec2(-250, 0));
-    auto seq1 = Sequence::create(moveLeft, DelayTime::create(2.0f), moveRight,nullptr);
-    imghighlight->runAction(RepeatForever::create(seq1));
-    //img->setContentSize(Size(70,150));
-    Label * label = Label::createWithTTF("Demo", "fonts/Marker Felt.ttf", 24);
-    ControlButton * startBtn = ControlButton::create(label,img);
-    //startBtn->setContentSize(Size(70,150));
-    startBtn->setAdjustBackgroundImage(false);
-    startBtn->setPosition(Vec2(200,200));
-    startBtn->setPreferredSize(Size(200,200));
-    startBtn->addChild(clipping,1);
-    //startBtn->addTargetWithActionForControlEvents(this, cccontrol_selector(MyClass::touch), CCControlEventTouchDownInside);
-    mainLayer->addChild(startBtn,100);
+//    Sprite * imghighlight = Sprite::create("images/card_main/homescreen/frame_recent.png");
+//    img->addChild(imghighlight, 10);
+//    auto stencil = Scale9Sprite::create("images/btn_tuquay.png");
+//    ClippingNode *clipping = ClippingNode::create();
+//    clipping->setAlphaThreshold(0.1f);
+//    clipping->setContentSize(stencil->getContentSize());
+//    clipping->addChild(imghighlight);
+//    clipping->setPosition(100,100);
+//    clipping->setStencil(stencil);
+//    auto moveLeft = MoveBy::create(0.5f,Vec2(+250, 0));
+//    auto moveRight = MoveBy::create(0.0f,Vec2(-250, 0));
+//    auto seq1 = Sequence::create(moveLeft, DelayTime::create(2.0f), moveRight,nullptr);
+//    imghighlight->runAction(RepeatForever::create(seq1));
+//    //img->setContentSize(Size(70,150));
+//    Label * label = Label::createWithTTF("Demo", "fonts/Marker Felt.ttf", 24);
+//    ControlButton * startBtn = ControlButton::create(label,img);
+//    //startBtn->setContentSize(Size(70,150));
+//    startBtn->setAdjustBackgroundImage(false);
+//    startBtn->setPosition(Vec2(200,200));
+//    startBtn->setPreferredSize(Size(200,200));
+//    startBtn->addChild(clipping,1);
+//    //startBtn->addTargetWithActionForControlEvents(this, cccontrol_selector(MyClass::touch), CCControlEventTouchDownInside);
+//    mainLayer->addChild(startBtn,100);
     return true;
 }
 void BingoScreen::resetGame()
