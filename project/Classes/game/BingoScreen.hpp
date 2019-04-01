@@ -16,6 +16,7 @@ using namespace cocos2d::ui;
 using namespace cocos2d::extension;
 using namespace std;
 class BingoScreen: public GameAbstract {
+    //std::string sprites[] = { "banana.png", "cherries.png", "crate.png", "orange.png" };
 public:
     bool init();
     BingoScreen();

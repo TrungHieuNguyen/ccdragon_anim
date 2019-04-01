@@ -53,6 +53,7 @@
 		BF8E937E2230D1D40072A7C3 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E93762230D1D40072A7C3 /* HelloWorldScene.cpp */; };
 		BF8E937F2230D1D40072A7C3 /* PopupResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E93772230D1D40072A7C3 /* PopupResult.cpp */; };
 		BF8E93802230D1D40072A7C3 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8E937A2230D1D40072A7C3 /* GameScene.cpp */; };
+		BF8F79982251CD36002CF8AC /* MyBodyParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF8F79972251CD36002CF8AC /* MyBodyParser.cpp */; };
 		BF9AADD121ABFE9700C47511 /* res in Resources */ = {isa = PBXBuildFile; fileRef = BF9AADD021ABFE9700C47511 /* res */; };
 		BFEC5E8E222FB63900853A75 /* BaseObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEC5E44222FB63900853A75 /* BaseObject.cpp */; };
 		BFEC5E8F222FB63900853A75 /* DragonBones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFEC5E46222FB63900853A75 /* DragonBones.cpp */; };
@@ -191,6 +192,8 @@
 		BF8E93792230D1D40072A7C3 /* PopupResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PopupResult.hpp; sourceTree = "<group>"; };
 		BF8E937A2230D1D40072A7C3 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		BF8E937B2230D1D40072A7C3 /* SlotTester.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SlotTester.hpp; sourceTree = "<group>"; };
+		BF8F79962251CD36002CF8AC /* MyBodyParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBodyParser.h; sourceTree = "<group>"; };
+		BF8F79972251CD36002CF8AC /* MyBodyParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyBodyParser.cpp; sourceTree = "<group>"; };
 		BF9AADD021ABFE9700C47511 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 		BFEC5E41222FB63900853A75 /* DragonBonesHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonBonesHeaders.h; sourceTree = "<group>"; };
 		BFEC5E43222FB63900853A75 /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
@@ -431,6 +434,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BF8F79952251CD36002CF8AC /* utils */,
 				BF8E93712230D1D40072A7C3 /* game */,
 				BFEC5F09222FB92D00853A75 /* demo */,
 				BFEC5E40222FB63900853A75 /* dragonBones */,
@@ -482,6 +486,15 @@
 				BF7C31B6224346F500785967 /* GameAbstract.h */,
 			);
 			path = game;
+			sourceTree = "<group>";
+		};
+		BF8F79952251CD36002CF8AC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF8F79962251CD36002CF8AC /* MyBodyParser.h */,
+				BF8F79972251CD36002CF8AC /* MyBodyParser.cpp */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		BFEC5E40222FB63900853A75 /* dragonBones */ = {
@@ -802,6 +815,7 @@
 				BFEC5EAC222FB63900853A75 /* BaseFactory.cpp in Sources */,
 				BF8E93802230D1D40072A7C3 /* GameScene.cpp in Sources */,
 				BFEC5E93222FB63900853A75 /* Armature.cpp in Sources */,
+				BF8F79982251CD36002CF8AC /* MyBodyParser.cpp in Sources */,
 				1AF87B781F6F77F7007BE51C /* AppController.mm in Sources */,
 				BFEC5F1E222FB92D00853A75 /* DragHelper.cpp in Sources */,
 				BFEC5E92222FB63900853A75 /* Constraint.cpp in Sources */,

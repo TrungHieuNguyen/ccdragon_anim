@@ -8,7 +8,18 @@ BingoScreen::~BingoScreen(){
 
 Scene* BingoScreen::createScene()
 {
-    return BingoScreen::create();
+    // create the scene with physics enabled
+    auto scene = Scene::createWithPhysics();
+    
+    // set gravity
+    scene->getPhysicsWorld()->setGravity(Vec2(0, -900));
+    
+    // optional: set debug draw
+    // scene->getPhysicsWorld()->setDebugDrawMask(0xffff);
+    
+    auto layer = BingoScreen::create();
+    scene->addChild(layer);
+    return scene;
 }
 bool BingoScreen::init()
 {
@@ -91,6 +102,20 @@ bool BingoScreen::init()
 //    startBtn->addChild(clipping,1);
 //    //startBtn->addTargetWithActionForControlEvents(this, cccontrol_selector(MyClass::touch), CCControlEventTouchDownInside);
 //    mainLayer->addChild(startBtn,100);
+    
+ 
+    auto hero = mainLayer->getChildByName<Sprite*>("MainCharacter");
+    //hero->setPosition(_positionX, _positionY);
+    
+    auto bodyBall= PhysicsBody::createCircle(hero->getBoundingBox().size.height);      // 1
+    bodyBall->getShape(0)->setRestitution(1.0f);
+    bodyBall->getShape(0)->setFriction(0.0f);
+    bodyBall->getShape(0)->setDensity(1.0f);
+    bodyBall->setGravityEnable(true);                       // 2
+    bodyBall->setDynamic(false);                            // 3
+    hero->setPhysicsBody(bodyBall);
+    //bodyBall->setContactTestBitmask(0x000001);
+    hero->setTag(1);
     return true;
 }
 void BingoScreen::resetGame()

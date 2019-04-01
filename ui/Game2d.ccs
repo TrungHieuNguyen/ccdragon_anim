@@ -30,6 +30,10 @@
           <TTF Name="sf-ui-text-bold.ttf" />
         </Folder>
         <Folder Name="images">
+          <Folder Name="background">
+            <Image Name="light_background-wallpaper-480x800.jpg" />
+            <Image Name="light_background-wallpaper-800x480.jpg" />
+          </Folder>
           <Folder Name="card_main">
             <Folder Name="homescreen">
               <Image Name="arrow_left.png" />
@@ -1164,10 +1168,6 @@
           <Image Name="txt_tuquay.png" />
           <Image Name="Vip_lever@1x.png" />
           <Image Name="Vip_lever_2@1x.png" />
-          <Folder Name="background">
-            <Image Name="light_background-wallpaper-480x800.jpg" />
-            <Image Name="light_background-wallpaper-800x480.jpg" />
-          </Folder>
         </Folder>
         <Folder Name="particle">
           <Image Name="circle.png" />
