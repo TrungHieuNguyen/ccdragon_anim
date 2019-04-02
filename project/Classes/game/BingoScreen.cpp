@@ -113,9 +113,9 @@ bool BingoScreen::init()
     bodyBall->getShape(0)->setDensity(1.0f);
     bodyBall->setGravityEnable(true);                       // 2
     bodyBall->setDynamic(false);                            // 3
-    hero->setPhysicsBody(bodyBall);
+    //hero->setPhysicsBody(bodyBall);
     //bodyBall->setContactTestBitmask(0x000001);
-    hero->setTag(1);
+    //hero->setTag(1);
     return true;
 }
 void BingoScreen::resetGame()
