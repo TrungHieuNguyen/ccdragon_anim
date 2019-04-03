@@ -182,6 +182,12 @@ bool BingoScreen::onTouchBegan(Touch *touch, Event *unused_event) {
     if (offset.x < 0) {
         return true;
     }
+    ActionInterval* move = MoveBy::create(0.5f, Vec2(0,70));
+    ActionInterval* move_ease = EaseBackInOut::create((ActionInterval*) (move->clone()));
+    ActionInterval* move_ease_back = EaseBackOut::create((ActionInterval*) (MoveBy::create(0.5f, Vec2(0,-70))));
+    Spawn * spawnMoveUp = Spawn::create(ScaleTo::create(0.3, 1.2),move_ease, NULL);
+    Spawn * spawnMoveDown =Spawn::create(ScaleTo::create(0.3, 1.0),move_ease_back, NULL);
+    _hero->runAction(Sequence::create(spawnMoveUp,spawnMoveDown, nullptr));
     
     auto projectile = Sprite::create("projectile.png");
     auto projectileSize = projectile->getContentSize();
