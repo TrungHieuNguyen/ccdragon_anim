@@ -145,19 +145,14 @@ void BingoScreen::updateGame(float dt)
 }
 void BingoScreen::addMonster(float dt) {
     auto monster = Sprite::create("monster.png");
-    // 1
     auto monsterSize = monster->getContentSize();
-    auto physicsBody = PhysicsBody::createBox(Size(monsterSize.width , monsterSize.height),
-                                              PhysicsMaterial(0.1f, 1.0f, 0.0f));
-    // 2
+    auto physicsBody = PhysicsBody::createBox(Size(monsterSize.width , monsterSize.height),PhysicsMaterial(0.1f, 1.0f, 0.0f));
+
     physicsBody->setDynamic(true);
-    // 3
     physicsBody->setCategoryBitmask((int)PhysicsCategory::Monster);
     physicsBody->setCollisionBitmask((int)PhysicsCategory::None);
     physicsBody->setContactTestBitmask((int)PhysicsCategory::Projectile);
-    
     monster->setPhysicsBody(physicsBody);
-    // 1
     auto monsterContentSize = monster->getContentSize();
     auto selfContentSize = this->getContentSize();
     int minY = monsterContentSize.height/2;
@@ -168,13 +163,11 @@ void BingoScreen::addMonster(float dt) {
     monster->setPosition(Vec2(selfContentSize.width + monsterContentSize.width/2, randomY));
     this->addChild(monster);
     
-    // 2
-    int minDuration = 2.0;
-    int maxDuration = 4.0;
+    int minDuration = 3.0;
+    int maxDuration = 5.0;
     int rangeDuration = maxDuration - minDuration;
     int randomDuration = (rand() % rangeDuration) + minDuration;
     
-    // 3
     auto actionMove = MoveTo::create(randomDuration, Vec2(-monsterContentSize.width/2, randomY));
     auto actionRemove = RemoveSelf::create();
     monster->runAction(Sequence::create(actionMove,actionRemove, nullptr));
@@ -208,8 +201,8 @@ bool BingoScreen::onTouchBegan(Touch *touch, Event *unused_event) {
     
     auto actionMove = MoveTo::create(2.0f, realDest);
     auto actionRemove = RemoveSelf::create();
+    projectile->runAction(RepeatForever::create(RotateBy::create(0.3f, 360)));
     projectile->runAction(Sequence::create(actionMove,actionRemove, nullptr));
-    
     return true;
 }
 bool BingoScreen::onContactBegan(PhysicsContact &contact)
