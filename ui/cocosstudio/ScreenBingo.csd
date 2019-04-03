@@ -6,10 +6,10 @@
       <ObjectData Name="Scene" Tag="8" ctype="GameNodeObjectData">
         <Size X="480.0000" Y="800.0000" />
         <Children>
-          <AbstractNodeData Name="bg" ActionTag="-686823099" Tag="11" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftMargin="0.0042" RightMargin="-0.0042" TopMargin="-0.0012" BottomMargin="0.0012" LeftEage="175" RightEage="175" TopEage="210" BottomEage="210" Scale9OriginX="175" Scale9OriginY="210" Scale9Width="130" Scale9Height="380" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="bg" ActionTag="-686823099" Tag="11" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" PercentWidthEnable="True" PercentHeightEnable="True" PercentWidthEnabled="True" PercentHeightEnabled="True" LeftEage="175" RightEage="175" TopEage="210" BottomEage="210" Scale9OriginX="175" Scale9OriginY="210" Scale9Width="130" Scale9Height="380" ctype="ImageViewObjectData">
             <Size X="480.0000" Y="800.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="240.0042" Y="400.0012" />
+            <Position X="240.0000" Y="400.0000" />
             <Scale ScaleX="1.0346" ScaleY="1.0332" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="0.5000" />
@@ -49,24 +49,24 @@
             <FileData Type="Normal" Path="images/card_main/homescreen/frame_recent.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="MainCharacter" ActionTag="-1123645295" Tag="46" IconVisible="False" LeftMargin="53.9630" RightMargin="362.0370" TopMargin="272.6951" BottomMargin="446.3049" ctype="SpriteObjectData">
+          <AbstractNodeData Name="MainCharacter" ActionTag="-1123645295" Tag="46" IconVisible="False" LeftMargin="10.8275" RightMargin="405.1725" TopMargin="379.1492" BottomMargin="339.8508" ctype="SpriteObjectData">
             <Size X="64.0000" Y="81.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="85.9630" Y="486.8049" />
+            <Position X="42.8275" Y="380.3508" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1791" Y="0.6085" />
+            <PrePosition X="0.0892" Y="0.4754" />
             <PreSize X="0.1333" Y="0.1013" />
             <FileData Type="Normal" Path="images/characters/MainCharacter.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="pnlControler" ActionTag="-1653254855" Alpha="179" Tag="48" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="19.9999" RightMargin="20.0001" TopMargin="820.0000" BottomMargin="-170.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="pnlControler" ActionTag="-1653254855" Alpha="179" Tag="48" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="20.0000" RightMargin="20.0000" TopMargin="820.0000" BottomMargin="-170.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="440.0000" Y="150.0000" />
             <Children>
-              <AbstractNodeData Name="btnStart" ActionTag="1744807259" Tag="7" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="101.0000" RightMargin="101.0000" TopMargin="15.8265" BottomMargin="25.1735" TouchEnable="True" FontSize="32" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="208" Scale9Height="87" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btnStart" ActionTag="1744807259" Tag="7" IconVisible="False" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="101.0000" RightMargin="101.0000" TopMargin="15.8200" BottomMargin="25.1800" TouchEnable="True" FontSize="32" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="208" Scale9Height="87" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="238.0000" Y="109.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="220.0000" Y="79.6735" />
+                <Position X="220.0000" Y="79.6800" />
                 <Scale ScaleX="1.0591" ScaleY="1.5423" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.5000" Y="0.5312" />
@@ -113,7 +113,7 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="239.9999" Y="-95.0000" />
+            <Position X="240.0000" Y="-95.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5000" Y="-0.1187" />
@@ -183,13 +183,13 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="rect96_29" ActionTag="-575201119" Tag="49" IconVisible="False" LeftMargin="45.1886" RightMargin="338.8114" TopMargin="419.1965" BottomMargin="284.8035" ctype="SpriteObjectData">
+          <AbstractNodeData Name="rect96_29" ActionTag="-575201119" Tag="49" IconVisible="False" LeftMargin="34.2349" RightMargin="349.7651" TopMargin="618.1791" BottomMargin="85.8208" ctype="SpriteObjectData">
             <Size X="96.0000" Y="96.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="93.1886" Y="332.8035" />
+            <Position X="82.2349" Y="133.8208" />
             <Scale ScaleX="1.4594" ScaleY="1.3445" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.1941" Y="0.4160" />
+            <PrePosition X="0.1713" Y="0.1673" />
             <PreSize X="0.2000" Y="0.1200" />
             <FileData Type="Normal" Path="images/characters/rect96.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />

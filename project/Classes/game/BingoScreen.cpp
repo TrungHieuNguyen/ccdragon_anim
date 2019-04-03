@@ -8,15 +8,10 @@ BingoScreen::~BingoScreen(){
 
 Scene* BingoScreen::createScene()
 {
-    // create the scene with physics enabled
+
     auto scene = Scene::createWithPhysics();
-    
-    // set gravity
-    scene->getPhysicsWorld()->setGravity(Vec2(0, -900));
-    
-    // optional: set debug draw
-    // scene->getPhysicsWorld()->setDebugDrawMask(0xffff);
-    
+    scene->getPhysicsWorld()->setGravity(Vec2(0,0));
+    scene->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
     auto layer = BingoScreen::create();
     scene->addChild(layer);
     return scene;
@@ -27,6 +22,10 @@ bool BingoScreen::init()
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
+    auto background = DrawNode::create();
+    background->drawSolidRect(origin, visibleSize, Color4F(0.6,0.6,0.6,1.0));
+    this->addChild(background);
+    
     mainLayer = CSLoader::createNode("ScreenBingo.csb");
     mainLayer->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     mainLayer->setPosition(Vec2(visibleSize.width/2 , visibleSize.height/2));
@@ -104,10 +103,10 @@ bool BingoScreen::init()
 //    mainLayer->addChild(startBtn,100);
     
  
-    auto hero = mainLayer->getChildByName<Sprite*>("MainCharacter");
-    //hero->setPosition(_positionX, _positionY);
+     _hero = mainLayer->getChildByName<Sprite*>("MainCharacter");
+    //_hero->setPosition(_positionX, _positionY);
     
-    auto bodyBall= PhysicsBody::createCircle(hero->getBoundingBox().size.height);      // 1
+    auto bodyBall= PhysicsBody::createCircle(_hero->getBoundingBox().size.height);      // 1
     bodyBall->getShape(0)->setRestitution(1.0f);
     bodyBall->getShape(0)->setFriction(0.0f);
     bodyBall->getShape(0)->setDensity(1.0f);
@@ -116,6 +115,15 @@ bool BingoScreen::init()
     //hero->setPhysicsBody(bodyBall);
     //bodyBall->setContactTestBitmask(0x000001);
     //hero->setTag(1);
+    
+    srand((unsigned int)time(nullptr));
+    this->schedule(schedule_selector(BingoScreen::addMonster), 1.5);
+    auto eventListener = EventListenerTouchOneByOne::create();
+    eventListener->onTouchBegan = CC_CALLBACK_2(BingoScreen::onTouchBegan, this);
+    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(eventListener, _hero);
+    auto contactListener = EventListenerPhysicsContact::create();
+    contactListener->onContactBegin = CC_CALLBACK_1(BingoScreen::onContactBegan, this);
+    this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener, this);
     return true;
 }
 void BingoScreen::resetGame()
@@ -134,4 +142,84 @@ void BingoScreen::stopGame()
 void BingoScreen::updateGame(float dt)
 {
     log("updateGame...");
+}
+void BingoScreen::addMonster(float dt) {
+    auto monster = Sprite::create("monster.png");
+    // 1
+    auto monsterSize = monster->getContentSize();
+    auto physicsBody = PhysicsBody::createBox(Size(monsterSize.width , monsterSize.height),
+                                              PhysicsMaterial(0.1f, 1.0f, 0.0f));
+    // 2
+    physicsBody->setDynamic(true);
+    // 3
+    physicsBody->setCategoryBitmask((int)PhysicsCategory::Monster);
+    physicsBody->setCollisionBitmask((int)PhysicsCategory::None);
+    physicsBody->setContactTestBitmask((int)PhysicsCategory::Projectile);
+    
+    monster->setPhysicsBody(physicsBody);
+    // 1
+    auto monsterContentSize = monster->getContentSize();
+    auto selfContentSize = this->getContentSize();
+    int minY = monsterContentSize.height/2;
+    int maxY = selfContentSize.height - monsterContentSize.height/2;
+    int rangeY = maxY - minY;
+    int randomY = (rand() % rangeY) + minY;
+    
+    monster->setPosition(Vec2(selfContentSize.width + monsterContentSize.width/2, randomY));
+    this->addChild(monster);
+    
+    // 2
+    int minDuration = 2.0;
+    int maxDuration = 4.0;
+    int rangeDuration = maxDuration - minDuration;
+    int randomDuration = (rand() % rangeDuration) + minDuration;
+    
+    // 3
+    auto actionMove = MoveTo::create(randomDuration, Vec2(-monsterContentSize.width/2, randomY));
+    auto actionRemove = RemoveSelf::create();
+    monster->runAction(Sequence::create(actionMove,actionRemove, nullptr));
+}
+
+bool BingoScreen::onTouchBegan(Touch *touch, Event *unused_event) {
+    // 1  - Just an example for how to get the  _player object
+    //auto node = unused_event->getCurrentTarget();
+    Vec2 touchLocation = touch->getLocation();
+    Vec2 offset = touchLocation - _hero->getPosition();
+    
+    if (offset.x < 0) {
+        return true;
+    }
+    
+    auto projectile = Sprite::create("projectile.png");
+    auto projectileSize = projectile->getContentSize();
+    auto physicsBody = PhysicsBody::createCircle(projectileSize.width/2 );
+    physicsBody->setDynamic(true);
+    physicsBody->setCategoryBitmask((int)PhysicsCategory::Projectile);
+    physicsBody->setCollisionBitmask((int)PhysicsCategory::None);
+    physicsBody->setContactTestBitmask((int)PhysicsCategory::Monster);
+    projectile->setPhysicsBody(physicsBody);
+    projectile->setPosition(_hero->getPosition());
+    this->addChild(projectile);
+    
+    offset.normalize();
+    auto shootAmount = offset * 1000;
+
+    auto realDest = shootAmount + projectile->getPosition();
+    
+    auto actionMove = MoveTo::create(2.0f, realDest);
+    auto actionRemove = RemoveSelf::create();
+    projectile->runAction(Sequence::create(actionMove,actionRemove, nullptr));
+    
+    return true;
+}
+bool BingoScreen::onContactBegan(PhysicsContact &contact)
+{
+    auto nodeA = contact.getShapeA()->getBody()->getNode();
+    auto nodeB = contact.getShapeB()->getBody()->getNode();
+    if(nodeA)
+        nodeA->removeFromParent();
+    
+    if(nodeB)
+        nodeB->removeFromParent();
+    return true;
 }
