@@ -10,6 +10,7 @@
             <Fnt Name="coin-export.fnt" />
             <Fnt Name="dong-export.fnt" />
             <Fnt Name="font_black-export.fnt" />
+            <TTF Name="Stzhongs.ttf" />
           </Folder>
           <Folder Name="lobby">
             <Fnt Name="font_coin_tophu-export.fnt" />

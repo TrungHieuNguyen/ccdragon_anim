@@ -183,7 +183,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="rect96_29" ActionTag="-575201119" Tag="49" IconVisible="False" LeftMargin="34.2349" RightMargin="349.7651" TopMargin="618.1791" BottomMargin="85.8208" ctype="SpriteObjectData">
+          <AbstractNodeData Name="rect96_29" ActionTag="-575201119" Tag="49" IconVisible="False" LeftMargin="34.2349" RightMargin="349.7651" TopMargin="618.1792" BottomMargin="85.8208" ctype="SpriteObjectData">
             <Size X="96.0000" Y="96.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="82.2349" Y="133.8208" />
@@ -193,6 +193,18 @@
             <PreSize X="0.2000" Y="0.1200" />
             <FileData Type="Normal" Path="images/characters/rect96.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Text_1" ActionTag="904747785" Tag="16" IconVisible="False" LeftMargin="10.4052" RightMargin="162.5948" TopMargin="235.2404" BottomMargin="537.7596" FontSize="20" LabelText="Thông báo: 讓Hieu瘋狂的太熱了." ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="307.0000" Y="27.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="163.9052" Y="551.2596" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.3415" Y="0.6891" />
+            <PreSize X="0.6396" Y="0.0338" />
+            <FontResource Type="Normal" Path="fonts/dhcl/Stzhongs.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
