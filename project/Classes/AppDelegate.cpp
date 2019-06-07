@@ -1,24 +1,24 @@
 #include "AppDelegate.h"
-
-#include "demo/HelloDragonBones.h"
-#include "demo/AnimationBase.h"
-#include "demo/DragonBonesEvent.h"
-#include "demo/AnimationLayer.h"
-#include "demo/BoneOffset.h"
-#include "demo/InverseKinematics.h"
-#include "demo/BoundingBox.h"
-#include "demo/ReplaceSlotDisplay.h"
-#include "demo/ReplaceSkin.h"
-#include "demo/ReplaceAnimation.h"
-#include "demo/CoreElement.h"
-#include "demo/PerformanceTest.h"
+//
+//#include "demo/HelloDragonBones.h"
+//#include "demo/AnimationBase.h"
+//#include "demo/DragonBonesEvent.h"
+//#include "demo/AnimationLayer.h"
+//#include "demo/BoneOffset.h"
+//#include "demo/InverseKinematics.h"
+//#include "demo/BoundingBox.h"
+//#include "demo/ReplaceSlotDisplay.h"
+//#include "demo/ReplaceSkin.h"
+//#include "demo/ReplaceAnimation.h"
+//#include "demo/CoreElement.h"
+//#include "demo/PerformanceTest.h"
 #include "game/GameScrollingScreen.h"
 #include "game/GameScene.h"
 #include "game/BingoScreen.hpp"
 // #include "DragonBonesTest.h"
 
 USING_NS_CC;
-static cocos2d::Size designResolutionSize = cocos2d::Size(480, 800);
+static cocos2d::Size designResolutionSize = cocos2d::Size(1024, 720);
 AppDelegate::AppDelegate() 
 {
 }
@@ -60,7 +60,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    auto scene = BingoScreen::createScene();
+    auto scene = GameScene::createScene();
     // auto scene = AnimationBase::createScene();
     // auto scene = DragonBonesEvent::createScene();
     // auto scene = AnimationLayer::createScene();

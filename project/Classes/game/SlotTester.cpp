@@ -193,8 +193,8 @@ void SlotTester::spinRamdomReel()
     {
         for(int j =0; j < 3; j++)
         {
-            //int rand =  RandomHelper::random_int(0, int(reelSymbol[j].size()-1));
-            int rand =  arc4random()%(reelSymbol[j].size()-1);
+            int rand =  RandomHelper::random_int(0, int(reelSymbol[j].size()-1));
+            //int rand =  arc4random()%(reelSymbol[j].size()-1);
             reelResult[j].push_back(reelSymbol[j].at(rand));
             reelSymbol[j].erase(reelSymbol[j].begin()+rand);
             
