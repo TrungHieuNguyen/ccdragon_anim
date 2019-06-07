@@ -16,13 +16,13 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="images/background/light_background-wallpaper-480x800.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="circle01" ActionTag="1300959165" Tag="47" IconVisible="False" LeftMargin="346.5568" RightMargin="61.4432" TopMargin="130.7905" BottomMargin="597.2095" ctype="SpriteObjectData">
+          <AbstractNodeData Name="circle01" ActionTag="1300959165" Tag="47" IconVisible="False" LeftMargin="397.0781" RightMargin="10.9219" TopMargin="279.9467" BottomMargin="448.0533" ctype="SpriteObjectData">
             <Size X="72.0000" Y="72.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="382.5568" Y="633.2095" />
-            <Scale ScaleX="2.2080" ScaleY="2.1997" />
+            <Position X="433.0781" Y="484.0533" />
+            <Scale ScaleX="1.5000" ScaleY="1.5000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.7970" Y="0.7915" />
+            <PrePosition X="0.9022" Y="0.6051" />
             <PreSize X="0.1500" Y="0.0900" />
             <FileData Type="Normal" Path="images/characters/circle72.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
@@ -31,7 +31,7 @@
             <Size X="128.0000" Y="128.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="453.4655" Y="237.8394" />
-            <Scale ScaleX="2.0774" ScaleY="2.0551" />
+            <Scale ScaleX="1.7000" ScaleY="1.7000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.9447" Y="0.2973" />
             <PreSize X="0.2667" Y="0.1600" />
@@ -49,13 +49,13 @@
             <FileData Type="Normal" Path="images/card_main/homescreen/frame_recent.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="MainCharacter" ActionTag="-1123645295" Tag="46" IconVisible="False" LeftMargin="10.8275" RightMargin="405.1725" TopMargin="379.1492" BottomMargin="339.8508" ctype="SpriteObjectData">
+          <AbstractNodeData Name="MainCharacter" ActionTag="-1123645295" Tag="46" IconVisible="False" LeftMargin="10.8276" RightMargin="405.1724" TopMargin="506.1445" BottomMargin="212.8555" ctype="SpriteObjectData">
             <Size X="64.0000" Y="81.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="42.8275" Y="380.3508" />
+            <Position X="42.8276" Y="253.3555" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0892" Y="0.4754" />
+            <PrePosition X="0.0892" Y="0.3167" />
             <PreSize X="0.1333" Y="0.1013" />
             <FileData Type="Normal" Path="images/characters/MainCharacter.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
@@ -183,7 +183,7 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="rect96_29" ActionTag="-575201119" Tag="49" IconVisible="False" LeftMargin="34.2349" RightMargin="349.7651" TopMargin="618.1791" BottomMargin="85.8208" ctype="SpriteObjectData">
+          <AbstractNodeData Name="rect96_29" ActionTag="-575201119" Tag="49" IconVisible="False" LeftMargin="34.2349" RightMargin="349.7651" TopMargin="618.1792" BottomMargin="85.8208" ctype="SpriteObjectData">
             <Size X="96.0000" Y="96.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="82.2349" Y="133.8208" />
@@ -193,6 +193,89 @@
             <PreSize X="0.2000" Y="0.1200" />
             <FileData Type="Normal" Path="images/characters/rect96.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cnText" ActionTag="1006133680" Tag="277" IconVisible="False" LeftMargin="4.1515" RightMargin="104.8485" TopMargin="56.9630" BottomMargin="716.0370" FontSize="24" LabelText="讓 Thông Báo 瘋狂的太熱了 123456" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="371.0000" Y="27.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="189.6515" Y="729.5370" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.3951" Y="0.9119" />
+            <PreSize X="0.7729" Y="0.0338" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cnText_0" ActionTag="-1246288816" Tag="278" IconVisible="False" LeftMargin="0.0838" RightMargin="68.9162" TopMargin="84.7334" BottomMargin="683.2666" FontSize="24" LabelText="讓 Thông Báo 瘋狂的太熱了 123456" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="411.0000" Y="32.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="205.5838" Y="699.2666" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.4283" Y="0.8741" />
+            <PreSize X="0.8562" Y="0.0400" />
+            <FontResource Type="Normal" Path="fonts/cn/stzhongs.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cnText_0_0" ActionTag="1510629509" Tag="279" IconVisible="False" LeftMargin="-0.3267" RightMargin="104.3267" TopMargin="118.4421" BottomMargin="656.5579" FontSize="24" LabelText="讓 Thông Báo 瘋狂的太熱了 123456" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="376.0000" Y="25.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="187.6733" Y="669.0579" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.3910" Y="0.8363" />
+            <PreSize X="0.7833" Y="0.0313" />
+            <FontResource Type="Normal" Path="fonts/cn/fzstk.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cnText_1" ActionTag="1266794281" Tag="53" IconVisible="False" LeftMargin="5.7138" RightMargin="165.2862" TopMargin="20.8751" BottomMargin="746.1249" FontSize="24" LabelText="ADS Thông Báo  ABCDEFGH 123456" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="309.0000" Y="33.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="160.2138" Y="762.6249" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="255" />
+            <PrePosition X="0.3338" Y="0.9533" />
+            <PreSize X="0.6438" Y="0.0413" />
+            <FontResource Type="Normal" Path="fonts/vi/AvenirNextCondensed-Regular.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cnText_0_0_0" ActionTag="78621074" Tag="54" IconVisible="False" LeftMargin="-0.7317" RightMargin="121.7317" TopMargin="152.1598" BottomMargin="616.8402" FontSize="24" LabelText="讓 Thông Báo 瘋狂的太熱了 123456" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="359.0000" Y="31.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="178.7683" Y="632.3402" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.3724" Y="0.7904" />
+            <PreSize X="0.7479" Y="0.0388" />
+            <FontResource Type="Normal" Path="fonts/cn/stkaiti.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cnText_0_0_0_0" ActionTag="-1789825909" Tag="55" IconVisible="False" LeftMargin="2.6569" RightMargin="71.3431" TopMargin="186.6025" BottomMargin="584.3975" FontSize="24" LabelText="讓 Thông Báo 瘋狂的太熱了 123456" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="406.0000" Y="29.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="205.6569" Y="598.8975" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.4285" Y="0.7486" />
+            <PreSize X="0.8458" Y="0.0362" />
+            <FontResource Type="Normal" Path="fonts/cn/AvenirNextCondensed1.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="cnText_0_0_0_0_0" ActionTag="2122570225" Tag="64" IconVisible="False" LeftMargin="3.1670" RightMargin="68.8330" TopMargin="220.1859" BottomMargin="550.8141" FontSize="24" LabelText="讓 Thông Báo 瘋狂的太熱了 123456" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="408.0000" Y="29.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="207.1670" Y="565.3141" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.4316" Y="0.7066" />
+            <PreSize X="0.8500" Y="0.0362" />
+            <FontResource Type="Normal" Path="fonts/cn/AvenirNextCondensed2.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>
